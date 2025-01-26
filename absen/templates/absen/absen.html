@@ -10,33 +10,24 @@
             <strong>ini solusinya!</strong>
         </div>
         <div class="notification is-danger" id="description_valid">
-            Kalo absennya gabisa, nonaktifkan dulu ADBlocknya
+            Kalo absennya gabisa, nonaktifin dulu ADBlocknya
         </div>
         <div class="card">
             <div class="card-content">
                 <div class="content">
+                    <p class="is-size-5">Kode Absen Lama</p>
                     <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" />
                     <input class="input is-primary mb-2" type="number" id="inputpertemuan" placeholder="Pertemuan ke" />
                     <button class="button is-primary" onclick="showDecrypted();">
-                        Cek Decrypted
+                        Buat Absen Baru
                     </button>
                 </div>
             </div>
         </div>
-        {% comment %} <div class="card">
-            <div class="card-content">
-                <div class="content">
-                    <p class="is-size-5" id="decrypted">Decrypted</p>
-                    <input class="input is-primary mb-2" type="text" id="hasil_decrypt" placeholder="Hasil decrypt" />
-                    <input class="input is-primary mb-2" type="text" id="id_matkul" placeholder="ID Mata Kuliah" />
-                </div>
-            </div>
-        </div> {% endcomment %}
         <div class="card">
             <div class="card-content">
                 <div class="content">
-                    <p class="is-size-5">Hasil kode Absen</p>
-                    {% comment %} <input class="input is-primary mb-2" type="text" id="kode_baru" placeholder="Kode baru" /> {% endcomment %}
+                    <p class="is-size-5">Kode Absen Baru</p>
                     <input class="input is-primary mb-2" type="text" id="kode_baru_enc" placeholder="Kode baru enc" />
                 </div>
             </div>

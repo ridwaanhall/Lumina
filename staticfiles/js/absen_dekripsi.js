@@ -35,8 +35,6 @@ function showDecrypted() {
         var parts = decrypted_2.split(',');
         var idMatkul = parts[0];
         
-        // document.getElementById('hasil_decrypt').value = decrypted_2;
-        // document.getElementById('id_matkul').value = idMatkul;
         var pertemuan = document.getElementById('inputpertemuan').value;
         
         var now = new Date();
@@ -51,13 +49,9 @@ function showDecrypted() {
 
         var DescrptionValid = 'Kode ini berlaku dari jam ' + startTime + ' hingga ' + endTime + ' di hari ' + day_date + '.';
 
-        // document.getElementById('kode_baru').value = kode_baru;
         document.getElementById('kode_baru_enc').value = kode_baru_enc;
         document.getElementById('description_valid').innerHTML = DescrptionValid;
     } catch (e) {
-        // document.getElementById('hasil_decrypt').value = "Gagal mendekripsi. Pastikan kode benar.";
-        // document.getElementById('id_matkul').value = "";
-        // document.getElementById('kode_baru').value = "";
         document.getElementById('kode_baru_enc').value = "";
     }
 }

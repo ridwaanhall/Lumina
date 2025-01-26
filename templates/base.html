@@ -4,21 +4,69 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Absen UTY</title>
-        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+
+        <title>Solusi Absen UTY: Generator Kode Absen Otomatis & Anti Lupa Absen</title>
+        <meta name="description" content="Generator kode absen otomatis untuk mahasiswa UTY. Atasi masalah lupa absen dengan cepat dan mudah. Hasilkan kode absen baru yang siap pakai dalam hitungan detik." />
+        <meta name="keywords" content="absen uty, generator absen uty, kode absen otomatis, solusi lupa absen, mahasiswa uty, absen kuliah, buat kode absen" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="ridwaanhall" />
+
+        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://absen-uty.vercel.app" />
+
+        <!-- Open Graph tags for social sharing -->
+        <meta property="og:title" content="Solusi Absen UTY: Generator Kode Absen Otomatis & Anti Lupa Absen" />
+        <meta property="og:description" content="Generator kode absen otomatis untuk mahasiswa UTY. Atasi masalah lupa absen dengan cepat dan mudah. Hasilkan kode absen baru yang siap pakai dalam hitungan detik." />
+        <meta property="og:image" content="{% static 'img/lupa-absen.webp' %}" />
+        <meta property="og:url" content="https://absen-uty.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Absen UTY Generator" />
+        <meta property="og:locale" content="id_ID" />
+
+        <!-- Twitter Card tags for Twitter sharing -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Solusi Absen UTY: Generator Kode Absen Otomatis & Anti Lupa Absen" />
+        <meta name="twitter:description" content="Generator kode absen otomatis untuk mahasiswa UTY. Atasi masalah lupa absen dengan cepat dan mudah. Hasilkan kode absen baru yang siap pakai dalam hitungan detik." />
+        <meta name="twitter:image" content="{% static 'img/lupa-absen.webp' %}" />
+
+        <!-- Additional Meta Tags -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="application-name" content="Absen UTY Generator" />
+        <meta name="theme-color" content="#212121" />
+
+        <!-- PWA Meta Tags -->
+        <link rel="manifest" href="{% static 'site.webmanifest' %}" />
+
+        <!-- Prefetch -->
+        <link rel="prefetch" href="{% static 'img/lupa-absen.webp' %}" as="image" />
+
+        <!-- Schema.org Markup -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Absen UTY Generator",
+                "url": "https://absen-uty.vercel.app",
+                "description": "Generator kode absen otomatis untuk mahasiswa UTY. Atasi masalah lupa absen dengan cepat dan mudah.",
+                "image": "{% static 'img/lupa-absen.webp' %}",
+                "publisher": {
+                    "@type": "Person",
+                    "name": "ridwaanhall"
+                }
+            }
+        </script>
     </head>
     <body>
         {% include 'navbar.html' %}
         <section class="section">
             <div class="container">
-                {% block content %}
-
-                {% endblock %}
+                {% block content %} {% endblock %}
             </div>
         </section>
-        {% comment %} {% include 'footer.html' %} {% endcomment %}
     </body>
-    {% block script %}
-    {% endblock %}
+    {% block script %} {% endblock %}
 </html>
