@@ -23,7 +23,7 @@ class BlogListView(View):
             },
             {
                 "title": "Tips Mengatasi Lupa Presensi di UTY",
-                "thumbnail": "/static/img/lupa-presensi.webp",
+                "thumbnail": "/static/img/tips-presensi.webp",
                 "date": "Senin, 27 Januari 2025",
                 "category": "Tips",
                 "username": "ridwaanhall",
@@ -68,7 +68,7 @@ class BlogDetailView(View):
             },
             {
                 "title": "Tips Mengatasi Lupa Presensi di UTY",
-                "thumbnail": "/static/img/lupa-presensi.webp",
+                "thumbnail": "/static/img/tips-presensi.webp",
                 "date": "Senin, 27 Januari 2025",
                 "category": "Tips",
                 "username": "ridwaanhall",
