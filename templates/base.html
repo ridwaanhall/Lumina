@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Solusi Absen UTY: Generator Kode Absen Otomatis & Anti Lupa Absen</title>
+        <title>{% block title %}Solusi Absen UTY: Generator Kode Absen Otomatis & Anti Lupa Absen{% endblock %}</title>
         <meta name="description" content="Generator kode absen otomatis untuk mahasiswa UTY. Atasi masalah lupa absen dengan cepat dan mudah. Hasilkan kode absen baru yang siap pakai dalam hitungan detik." />
         <meta name="keywords" content="absen uty, generator absen uty, kode absen otomatis, solusi lupa absen, mahasiswa uty, absen kuliah, buat kode absen" />
         <meta name="robots" content="index, follow" />
@@ -13,6 +13,7 @@
 
         <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
         
+        <script src="https://kit.fontawesome.com/17dd18b72c.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
 
         <!-- Canonical URL -->
@@ -63,9 +64,7 @@
     <body>
         {% include 'navbar.html' %}
         <section class="section">
-            <div class="container">
-                {% block content %} {% endblock %}
-            </div>
+            {% block content %} {% endblock %}
         </section>
     </body>
     {% block script %} {% endblock %}

@@ -1,8 +1,30 @@
 {% load static %}
 <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-            <img src="{% static 'favicon.ico' %}" alt="Logo x">
+        <a class="navbar-item" href="{% url 'absen_view' %}">
+            <img src="{% static 'favicon.ico' %}" alt="Logo x"> <strong>Lupa Absen UTY</strong>
         </a>
+    </div>
+    <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="field is-grouped">
+                <p class="control">
+                    <a class="button is-warning" href="{% url 'blog' %}">
+                        <span class="icon">
+                            <i class="fa-solid fa-blog"></i>
+                        </span>
+                        <span>Blog</span>
+                    </a>
+                </p>
+                <p class="control">
+                    <a class="bd-tw-button button" href="https://github.com/ridwaanhall">
+                        <span class="icon">
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+                        <span> GitHub </span>
+                    </a>
+                </p>
+            </div>
+        </div>
     </div>
 </nav>
