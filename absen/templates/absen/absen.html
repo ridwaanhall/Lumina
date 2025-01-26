@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 <div class="columns is-centered">
     <div class="column is-6">
@@ -11,8 +13,8 @@
             <div class="card-content">
                 <div class="content">
                     <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" />
-                    <button class=" button is-primary" onclick="showDecrypted();">
-                        Cek ID Mata kuliah
+                    <button class="button is-primary" onclick="showDecrypted();">
+                        Cek Decrypted
                     </button>
                 </div>
             </div>
@@ -20,8 +22,8 @@
         <div class="card">
             <div class="card-content">
                 <div class="content">
-                    <p class="is-size-5" id="decrypted">ID Mata Kuliah</p>
-                    <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" value="contoh value" />
+                    <p class="is-size-5" id="decrypted">Decrypted</p>
+                    <input class="input is-primary mb-2" type="text" id="inputcodeabsen2" placeholder="hasil" value="contoh value" />
                 </div>
             </div>
         </div>
@@ -30,5 +32,9 @@
 {% endblock %}
 
 {% block script %}
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script type="text/javascript" src="{% static 'js/aes.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/ga_jelas.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/biar_jelas.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/absen_dekripsi.js' %}"></script>
 {% endblock %}
