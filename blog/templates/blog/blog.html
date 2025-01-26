@@ -4,7 +4,7 @@
 {% block title %}Daftar Blog | Blog{% endblock %}
 
 {% block content %}
-<section class="hero is-primary is-bold">
+<section class="hero is-primary is-bold card">
     <div class="hero-body">
         <div class="container">
             <h1 class="title">Daftar Blog</h1>
@@ -21,35 +21,44 @@
                 <div class="card">
                     {% if blog.thumbnail %}
                     <div class="card-image">
-                        <figure class="image is-4by3">
+                        <figure class="image is-1by1">
                             <img src="{{ blog.thumbnail }}" alt="{{ blog.title }}" loading="lazy" />
                         </figure>
                     </div>
                     {% endif %}
+
                     <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="{% static 'favicon.ico' %}" alt="ridwaanhall second icon" />
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">{{ blog.name }}</p>
+                                <p class="subtitle is-6">@{{ blog.username }}</p>
+                            </div>
+                        </div>
+                
                         <div class="content">
                             <h3 class="title is-4">
                                 <a href="{% url 'blog' %}{{ blog.title|slugify }}">{{ blog.title }}</a>
                             </h3>
-                            <table class="table is-fullwidth is-narrow">
-                                <tbody>
-                                    <tr>
-                                        <th>Tanggal Publikasi</th>
-                                        <td>{{ blog.date }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Kategori</th>
-                                        <td>{{ blog.category }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Penulis</th>
-                                        <td>{{ blog.author }}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <a href="{% url 'blog' %}{{ blog.title|slugify }}" class="button is-primary">Baca Selengkapnya</a>
+                            <p><time datetime="{{ blog.date }}">{{ blog.date }}.</time> <a href="#">{{ blog.category }}</a></p>
+                            <p>{{ blog.intro|truncatewords:30 }}</p>
                         </div>
                     </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <span>
+                                Bagian ke
+                                <a href="#">Instagram</a>
+                            </span>
+                        </p>
+                        <p class="card-footer-item">
+                            <span> Klik Detail <a href="{% url 'blog' %}{{ blog.title|slugify }}">Disini</a> </span>
+                        </p>
+                    </footer>
                 </div>
             </div>
             {% empty %}

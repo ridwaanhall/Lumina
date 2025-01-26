@@ -53,5 +53,6 @@ function showDecrypted() {
         document.getElementById('description_valid').innerHTML = DescrptionValid;
     } catch (e) {
         document.getElementById('kode_baru_enc').value = "";
+        document.getElementById('description_valid').innerHTML = "Kode tidak valid.";
     }
 }
