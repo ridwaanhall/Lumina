@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
+<html lang="id">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Test with Bulma</title>
+        <title>Absen UTY</title>
         <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
     </head>
@@ -17,5 +17,14 @@
                 {% endblock %}
             </div>
         </section>
+        {% comment %} {% include 'footer.html' %} {% endcomment %}
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/aes.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ga_jelas.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/biar_jelas.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/absen_dekripsi.js' %}"></script>
+
+    {% block script %}
+    {% endblock %}
 </html>

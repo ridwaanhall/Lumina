@@ -1,8 +1,34 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1 class="title">
-    Test with Bulma
-</h1>
-<p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+<div class="columns is-centered">
+    <div class="column is-6">
+        <div class="notification is-primary">
+            <code>Lupa absen?</code>
+            <strong>ini solusinya!</strong>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" />
+                    <button class=" button is-primary" onclick="showDecrypted();">
+                        Cek ID Mata kuliah
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <p class="is-size-5" id="decrypted">ID Mata Kuliah</p>
+                    <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" value="contoh value" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+
 {% endblock %}
