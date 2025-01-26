@@ -2,33 +2,37 @@
 
 {% load static %}
 
+{% block title %}Solusi Absen UTY: Generator Kode Absen Otomatis & Anti Lupa Absen{% endblock %}
+
 {% block content %}
-<div class="columns is-centered">
-    <div class="column is-6">
-        <div class="notification is-primary">
-            <code>Lupa absen?</code>
-            <strong>ini solusinya!</strong>
-        </div>
-        <div class="notification is-danger" id="description_valid">
-            Kalo absennya gabisa, nonaktifin dulu ADBlocknya
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <div class="content">
-                    <p class="is-size-5">Kode Absen Lama</p>
-                    <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" />
-                    <input class="input is-primary mb-2" type="number" id="inputpertemuan" placeholder="Pertemuan ke" />
-                    <button class="button is-primary" onclick="showDecrypted();">
-                        Buat Absen Baru
-                    </button>
+<div class="container">
+    <div class="columns is-centered">
+        <div class="column is-6">
+            <div class="notification is-primary">
+                <code>Lupa absen?</code>
+                <strong>ini solusinya!</strong>
+            </div>
+            <div class="notification is-danger" id="description_valid">
+                Kalo absennya gabisa, nonaktifin dulu ADBlocknya
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <p class="is-size-5">Kode Absen Lama</p>
+                        <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" />
+                        <input class="input is-primary mb-2" type="number" id="inputpertemuan" placeholder="Pertemuan ke" />
+                        <button class="button is-primary" onclick="showDecrypted();">
+                            Buat Absen Baru
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <div class="content">
-                    <p class="is-size-5">Kode Absen Baru</p>
-                    <input class="input is-primary mb-2" type="text" id="kode_baru_enc" placeholder="Kode baru enc" />
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <p class="is-size-5">Kode Absen Baru</p>
+                        <input class="input is-primary mb-2" type="text" id="kode_baru_enc" placeholder="Kode baru enc" />
+                    </div>
                 </div>
             </div>
         </div>
