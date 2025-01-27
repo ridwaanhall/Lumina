@@ -8,7 +8,7 @@ Siapa sih yang nggak pernah lupa presensi kuliah? Tenang aja, kamu nggak sendiri
 
 ## Fitur Canggih: Generator Kode Presensi Otomatis
 
-Website ini punya fitur andalan, yaitu generator kode presensi otomatis! Jadi, nggak perlu lagi panik kalau lupa presensi. Caranya gampang banget: copy-paste aja kode presensi lama kamu yang dienkripsi ke kolom yang udah disediain, terus masukin nomor pertemuan. Tinggal klik tombol "Cek Decrypted," dan website ini langsung memproses kodenya. Nggak pake lama, kamu langsung dapat kode presensi baru yang dienkripsi dan siap pakai! Simple banget, kan?
+Website ini punya fitur andalan, yaitu generator kode presensi otomatis! Jadi, nggak perlu lagi panik kalau lupa presensi. Caranya gampang banget: copy-paste aja kode presensi lama kamu yang dienkripsi ke kolom yang udah disediain, terus masukin nomor pertemuan. Tinggal klik tombol "Buat Presensi Baru" dan website ini langsung memproses kodenya. Nggak pake lama, kamu langsung dapat kode presensi baru yang dienkripsi dan siap pakai! Simple banget, kan?
 
 ## Desain Simpel, Penggunaan Anti Ribet
 
