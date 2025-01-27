@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     path('', include('absen.urls')),
     path('@ridwaanhall', views.RedirectView.as_view(), name='ridwaanhall'),
+    path('lanpage/', views.LandingPageView.as_view(), name='lanpage'),
     path('blog/', include('blog.urls')),
 ]
