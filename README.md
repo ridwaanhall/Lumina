@@ -1,6 +1,6 @@
-# Lupa Presensi UTY
+# LUPA PRESENSI UTY
 
-![Lupa Presensi UTY](staticfiles/img/lupa-presensi-2.webp)
+![LUPA PRESENSI UTY](staticfiles/img/lupa-presensi-2.webp)
 
 ## Sering Ketinggalan Presensi? Santai, Ada Solusinya
 
