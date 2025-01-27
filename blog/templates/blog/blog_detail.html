@@ -1,19 +1,76 @@
-{% extends 'base.html' %} {% load static %} {% block title %}{{ blog.title }} | Blog{% endblock %} {% block content %}
-<section class="hero is-primary is-bold card">
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}{{ blog.title }} | Blog{% endblock %}
+
+{% block content %}
+{% comment %} <section class="hero is-primary is-bold card">
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title mb-2">{{ blog.title }}</h1>
-            <h2 class="subtitle is-capitalized">Kategori : {{ blog.category }} | Penulis : {{ blog.name }} (<a href="http://absen-uty.vercel.app/@ridwaanhall">@{{ blog.username }}</a>) | Tanggal : {{blog.date}}</h2>
+            <h2 class="subtitle">Kategori : {{ blog.category }} | Penulis : {{ blog.name }} (<a href="http://absen-uty.vercel.app/@ridwaanhall" class="has-text-link is-underlined">@{{ blog.username }}</a>) | Tanggal : {{blog.date}}</h2>
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 
 <section class="section">
-    <div class="container">
-        <div class="content has-text-justified">
-            {{ blog.content|safe }}
-            <a href="{% url 'blog' %}" class="button is-link is-dark">Kembali ke List Blog</a>
+    <div class="columns">
+        <div class="column is-8">
+            <h1 class="title mb-4">{{ blog.title }}</h1>
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="{% static 'favicon.ico' %}" alt="ridwaanhall second icon" />
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-4">{{ blog.name }}
+                    </p>
+                    <p class="subtitle is-6">
+                        <a href="http://absen-uty.vercel.app/@ridwaanhall">@{{ blog.username }}
+                            <i class="fa-solid fa-circle-check"></i>
+                        </a> {{blog.date}}
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9">
+                        <img src="{{ blog.image }}" alt="{{ blog.title }}" loading="lazy" />
+                    </figure>
+                </div>
+            </div>
+            <div class="content has-text-justified">
+                {{ blog.content|safe }}
+            </div>
+        </div>
+
+        <div class="column is-4">
+            <div class="content">
+                <h4>Artikel Lainnya</h4>
+                {% for other in other_blogs %}
+                    {% comment %} <li>
+                        <a href="{% url 'blog' %}{{ other.title|slugify }}">{{ other.title }}</a>
+                    </li> {% endcomment %}
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="{{ other.thumbnail }}" alt="{{ other.title }}" loading="lazy" />
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <p class="subtitle is-6">
+                                <a href="{% url 'blog' %}{{ other.title|slugify }}">{{ other.title }}</a>
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </section>
-{% endblock %} {% block script %} {% endblock %}
+{% endblock %} 
+
+{% block script %}
+{% endblock %}

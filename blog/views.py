@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from django.views import View
 from django.utils.text import slugify
 
@@ -8,7 +8,8 @@ class BlogListView(View):
             {
                 "title": "Sering Ketinggalan Presensi UTY? Santai, Ada Solusinya!",
                 "thumbnail": "/static/img/lupa-presensi.webp",
-                "date": "Senin, 27 Januari 2025",
+                "image": "/static/img/lupa-presensi-16-9.webp",
+                "date": "Senin, 27 Januari 2025 08:30 WIB",
                 "category": "Tips & Trick",
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
@@ -24,7 +25,8 @@ class BlogListView(View):
             {
                 "title": "Tips Mengatasi Lupa Presensi di UTY",
                 "thumbnail": "/static/img/tips-presensi.webp",
-                "date": "Senin, 27 Januari 2025",
+                "image": "/static/img/tips-presensi-16-9.webp",
+                "date": "Senin, 27 Januari 2025 08:30 WIB",
                 "category": "Tips",
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
@@ -44,7 +46,8 @@ class BlogListView(View):
             {
                 "title": "Cara Menggunakan Generator Presensi Otomatis UTY",
                 "thumbnail": "/static/img/cara-presensi.webp",
-                "date": "Senin, 27 Januari 2025",
+                "image": "/static/img/cara-presensi-16-9.webp",
+                "date": "Senin, 27 Januari 2025 08:30 WIB",
                 "category": "Tutorial, Tips Kuliah, Teknologi Kampus",
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
@@ -54,28 +57,23 @@ class BlogListView(View):
                     
                     <h2>Langkah 1: Akses Generator Presensi</h2>
                     <p>Pertama-tama, buka halaman generator presensi otomatis di website kami. Kamu akan melihat tampilan yang sederhana dan mudah dipahami.</p>
-                    <p><em>(Catatan: Saya akan menyarankan untuk memasukkan gambar screenshot tampilan generator presensi Anda di sini. Jika Anda tidak memiliki gambar, deskripsikan secara detail apa yang terlihat di halaman tersebut.)</em></p>
                     
                     <h2>Langkah 2: Masukkan Kode Presensi Lama</h2>
                     <p>Di bagian "Kode Presensi Lama", terdapat kolom input yang bertuliskan "Paste kode absenmu disini". Masukkan kode presensi lama yang kamu peroleh dari dosen atau sistem presensi. Pastikan kode yang kamu masukkan benar, ya!</p>
-                    <p><em>(Catatan: Saya akan menyarankan untuk memasukkan gambar screenshot input kode presensi lama.)</em></p>
                     
                     <h2>Langkah 3: Masukkan Pertemuan Ke-</h2>
                     <p>Selanjutnya, pada kolom input di bawahnya, masukkan "Pertemuan ke-" yang ingin kamu presensikan. Misalnya, jika kamu ingin melakukan presensi untuk pertemuan ke-3, maka ketikkan angka 3 di kolom tersebut.</p>
-                    <p><em>(Catatan: Saya akan menyarankan untuk memasukkan gambar screenshot input pertemuan ke-)</em></p>
                     
                     <h2>Langkah 4: Generate Kode Presensi Baru</h2>
                     <p>Setelah memasukkan kode presensi lama dan pertemuan ke-, klik tombol "Buat Presensi Baru". Sistem kami akan bekerja untuk mengolah data dan menghasilkan kode presensi baru yang unik untukmu.</p>
-                    <p><em>(Catatan: Saya akan menyarankan untuk memasukkan gambar screenshot tombol "Buat Presensi Baru")</em></p>
                     
                     <h2>Langkah 5: Salin Kode Presensi Baru</h2>
                     <p>Kode presensi baru akan muncul di kolom input yang bertuliskan "Presensi Baru". Kamu bisa menyalin kode tersebut dengan mengklik tombol "Salin" yang ada di sebelahnya. Kode tersebut bisa kamu gunakan untuk melakukan presensi.</p>
-                    <p><em>(Catatan: Saya akan menyarankan untuk memasukkan gambar screenshot kode presensi baru dan tombol "Salin")</em></p>
+
                     <p>Setelah tombol Salin di klik, maka tombol tersebut akan berubah tulisan menjadi "Disalin" selama beberapa detik. Setelah itu, tombol akan berubah kembali menjadi tulisan "Salin"</p>
                     
                     <h2>Langkah 6: Generate QR Code (Opsional)</h2>
                     <p>Jika kamu ingin melakukan presensi menggunakan QR code, kamu bisa mengklik tombol "QR Code" yang ada di sebelahnya. Sistem akan menghasilkan QR Code yang bisa kamu scan menggunakan aplikasi presensi di kampus.</p>
-                    <p><em>(Catatan: Saya akan menyarankan untuk memasukkan gambar screenshot tombol "QR Code" serta contoh tampilan QR code)</em></p>
                     
                     <h2>Penting: Nonaktifkan AdBlock Jika Mengalami Masalah</h2>
                     <p>Beberapa pengguna mungkin mengalami masalah saat menggunakan generator presensi ini karena adanya AdBlock di browser mereka. Jika kamu mengalami masalah, coba nonaktifkan AdBlock terlebih dahulu, lalu refresh halaman generator presensi. </p>
@@ -106,7 +104,8 @@ class BlogDetailView(View):
             {
                 "title": "Sering Ketinggalan Presensi UTY? Santai, Ada Solusinya!",
                 "thumbnail": "/static/img/lupa-presensi.webp",
-                "date": "Senin, 27 Januari 2025",
+                "image": "/static/img/lupa-presensi-16-9.webp",
+                "date": "Senin, 27 Januari 2025 08:30 WIB",
                 "category": "Tips & Trick",
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
@@ -122,7 +121,8 @@ class BlogDetailView(View):
             {
                 "title": "Tips Mengatasi Lupa Presensi di UTY",
                 "thumbnail": "/static/img/tips-presensi.webp",
-                "date": "Senin, 27 Januari 2025",
+                "image": "/static/img/tips-presensi-16-9.webp",
+                "date": "Senin, 27 Januari 2025 08:30 WIB",
                 "category": "Tips",
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
@@ -142,14 +142,15 @@ class BlogDetailView(View):
             {
                 "title": "Cara Menggunakan Generator Presensi Otomatis UTY",
                 "thumbnail": "/static/img/cara-presensi.webp",
-                "date": "Senin, 27 Januari 2025",
+                "image": "/static/img/cara-presensi-16-9.webp",
+                "date": "Senin, 27 Januari 2025 08:30 WIB",
                 "category": "Tutorial, Tips Kuliah, Teknologi Kampus",
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
-                "intro": "Terburu-buru dan lupa presensi? Tenang! Generator Presensi Otomatis UTY siap membantu. Pelajari cara pakainya dalam panduan singkat ini!",
+                "intro": "Lupa presensi UTY? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.",
                 "content": """
-                    <p>Lupa presensi UTY? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.</p>
                     <p>Generator presensi otomatis ini adalah fitur andalan kami yang dirancang untuk membantu mahasiswa UTY mengatasi masalah lupa presensi. Dengan fitur ini, kamu bisa menghasilkan kode presensi baru secara otomatis, berdasarkan kode presensi lama yang kamu miliki. Yuk, simak panduan lengkapnya:</p>
+                    
                     <h2>Langkah 1: Akses Generator Presensi</h2>
                     <p>Pertama-tama, buka halaman generator presensi otomatis di website kami. Kamu akan melihat tampilan yang sederhana dan mudah dipahami.</p>
                     
@@ -164,6 +165,7 @@ class BlogDetailView(View):
                     
                     <h2>Langkah 5: Salin Kode Presensi Baru</h2>
                     <p>Kode presensi baru akan muncul di kolom input yang bertuliskan "Presensi Baru". Kamu bisa menyalin kode tersebut dengan mengklik tombol "Salin" yang ada di sebelahnya. Kode tersebut bisa kamu gunakan untuk melakukan presensi.</p>
+
                     <p>Setelah tombol Salin di klik, maka tombol tersebut akan berubah tulisan menjadi "Disalin" selama beberapa detik. Setelah itu, tombol akan berubah kembali menjadi tulisan "Salin"</p>
                     
                     <h2>Langkah 6: Generate QR Code (Opsional)</h2>
@@ -187,9 +189,15 @@ class BlogDetailView(View):
                 """
             },
         ]
+        
         blog_post = next((item for item in blogs if slugify(item['title']) == title), None)
+        other_blogs = [item for item in blogs if slugify(item['title']) != title]
+        
         if blog_post:
-            context = {'blog' : blog_post}
+            context = {
+                'blog' : blog_post,
+                'other_blogs': other_blogs
+            }
             return render(request, 'blog/blog_detail.html', context)
         else:
           return render(request, 'blog/blog_not_found.html', status=404)

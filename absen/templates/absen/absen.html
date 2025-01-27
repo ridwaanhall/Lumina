@@ -10,7 +10,7 @@
         <div class="column is-6">
             <div class="notification is-primary">
                 <code>Bingung cara pakenya?</code>
-                <strong>Kunjungi blog untuk selengkapnya!</strong>
+                <strong>Kunjungi <a href="{% url 'blog' %}" class="has-text-link"> blog</a> untuk selengkapnya!</strong>
             </div>
             <div class="notification is-danger" id="description_valid">
                 Kalo presensinya gabisa, nonaktifin dulu ADBlock-nya
@@ -31,7 +31,7 @@
                 <div class="card-content">
                     <div class="content">
                         <p class="is-size-5">Kode Presensi dan QR Code Baru</p>
-                        <input class="input is-link mb-2" type="text" id="kode_baru_enc" placeholder="Presensi Baru" />
+                        <input class="input is-link mb-2" type="text" id="kode_baru_enc" placeholder="Presensi Baru Muncul Disini" />
                         <button id="copyButton" class="button is-link is-dark">
                             Salin
                         </button>
