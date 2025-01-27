@@ -48,9 +48,14 @@ function showDecrypted() {
         var kode_baru_enc = CryptoJS.AES.encrypt(kode_baru, biar_jelas);
 
         var DescrptionValid = 'Kode ini berlaku dari jam ' + startTime + ' hingga ' + endTime + ' di hari ' + day_date + '.';
+        var encryptedText = kode_baru_enc.toString();
 
         document.getElementById('kode_baru_enc').value = kode_baru_enc;
         document.getElementById('description_valid').innerHTML = DescrptionValid;
+
+        var generateQRButton = document.getElementById('generateQRButton');
+        generateQRButton.setAttribute('href', 'https://api.qrserver.com/v1/create-qr-code/?size=450x450&data=' + encryptedText);
+        generateQRButton.setAttribute('target', '_blank');
     } catch (e) {
         document.getElementById('kode_baru_enc').value = "";
         document.getElementById('description_valid').innerHTML = "Kode tidak valid.";

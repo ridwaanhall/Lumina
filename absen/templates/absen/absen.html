@@ -21,7 +21,7 @@
                         <p class="is-size-5">Kode Presensi Lama</p>
                         <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" />
                         <input class="input is-primary mb-2" type="number" id="inputpertemuan" placeholder="Pertemuan ke" />
-                        <button class="button is-primary" onclick="showDecrypted();">
+                        <button class="button is-primary is-dark" onclick="showDecrypted();">
                             Buat Presensi Baru
                         </button>
                     </div>
@@ -31,7 +31,13 @@
                 <div class="card-content">
                     <div class="content">
                         <p class="is-size-5">Kode Presensi dan QR Code Baru</p>
-                        <input class="input is-primary mb-2" type="text" id="kode_baru_enc" placeholder="Presensi Baru" />
+                        <input class="input is-link mb-2" type="text" id="kode_baru_enc" placeholder="Presensi Baru" />
+                        <button id="copyButton" class="button is-link is-dark">
+                            Salin
+                        </button>
+                        <a id="generateQRButton" class="button is-link is-dark">
+                            QR Code
+                        </a>
                     </div>
                 </div>
             </div>
@@ -46,4 +52,26 @@
 <script type="text/javascript" src="{% static 'js/ga_jelas.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/biar_jelas.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/absen_dekripsi.js' %}"></script>
+<script type="text/javascript">
+    function copyCode() {
+        const copyButton = document.getElementById("copyButton");
+        const code = document.getElementById("kode_baru_enc").value;
+
+        navigator.clipboard.writeText(code).then(() => {
+            copyButton.innerText = "Disalin!";
+            copyButton.classList.remove('is-link');
+            copyButton.classList.add('is-success');
+
+            setTimeout(() => {
+                copyButton.innerText = "Salin";
+                copyButton.classList.remove('is-success');
+                copyButton.classList.add('is-link');
+            }, 3000);
+        }).catch(err => {
+            console.error('Tidak bisa mengcopy teks: ', err);
+        });
+    }
+
+    document.getElementById("copyButton").addEventListener("click", copyCode);
+</script>
 {% endblock %}
