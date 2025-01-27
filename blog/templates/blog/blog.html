@@ -46,22 +46,20 @@
                         </div>
                 
                         <div class="content">
-                            <h3 class="title is-4">
+                            {% for tag in blog.tags %}
+                                <span class="tag {{ tag.color }}">{{ tag.name }}</span>
+                            {% endfor %}
+                            <h3 class="title is-4 mt-2 mb-2">
                                 <a href="{% url 'blog' %}{{ blog.title|slugify }}">{{ blog.title }}</a>
                             </h3>
-                            <p><time datetime="{{ blog.date }}">{{ blog.date }}.</time> <a href="#">{{ blog.category }}</a></p>
-                            <p>{{ blog.intro|truncatewords:30 }}</p>
+                            <p class="mt-1">{{ blog.intro|truncatewords:30 }}</p>
                         </div>
                     </div>
                     <footer class="card-footer">
                         <p class="card-footer-item">
                             <span>
-                                Bagian ke
-                                <a href="#">Instagram</a>
+                                <time datetime="{{ blog.date }}">{{ blog.date }}</time>
                             </span>
-                        </p>
-                        <p class="card-footer-item">
-                            <span> Klik Detail <a href="{% url 'blog' %}{{ blog.title|slugify }}">Disini</a> </span>
                         </p>
                     </footer>
                 </div>

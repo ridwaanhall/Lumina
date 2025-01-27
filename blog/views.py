@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.views import View
 from django.utils.text import slugify
+import random
+
 
 class BlogListView(View):
     def get(self, request):
@@ -9,8 +11,8 @@ class BlogListView(View):
                 "title": "Sering Ketinggalan Presensi UTY? Santai, Ada Solusinya!",
                 "thumbnail": "/static/img/lupa-presensi.webp",
                 "image": "/static/img/lupa-presensi-16-9.webp",
-                "date": "Senin, 27 Januari 2025 08:30 WIB",
-                "category": "Tips & Trick",
+                "date": "08:30 WIB Senin, 27 Januari 2025",
+                "tags": ["Tips & Trick"],
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
                 "intro": "Lupa presensi kuliah? Tenang, website ini siap membantu kamu dengan fitur generator kode presensi otomatis yang mudah digunakan!",
@@ -26,8 +28,8 @@ class BlogListView(View):
                 "title": "Tips Mengatasi Lupa Presensi di UTY",
                 "thumbnail": "/static/img/tips-presensi.webp",
                 "image": "/static/img/tips-presensi-16-9.webp",
-                "date": "Senin, 27 Januari 2025 08:30 WIB",
-                "category": "Tips",
+                "date": "09:32 WIB Senin, 27 Januari 2025",
+                "tags": ["Tips & Trick"],
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
                 "intro": "Lupa presensi di UTY? Jangan panik! Ikuti tips sederhana ini untuk memastikan kamu tidak lagi ketinggalan presensi.",
@@ -47,8 +49,8 @@ class BlogListView(View):
                 "title": "Cara Menggunakan Generator Presensi Otomatis UTY",
                 "thumbnail": "/static/img/cara-presensi.webp",
                 "image": "/static/img/cara-presensi-16-9.webp",
-                "date": "Senin, 27 Januari 2025 08:30 WIB",
-                "category": "Tutorial, Tips Kuliah, Teknologi Kampus",
+                "date": "10:09 WIB Senin, 27 Januari 2025",
+                "tags": ["Tutorial", "Tips Kuliah", "Teknologi Kampus"],
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
                 "intro": "Lupa presensi UTY? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.",
@@ -93,6 +95,12 @@ class BlogListView(View):
                 """
             },
         ]
+        
+        colors = ['is-primary', 'is-link', 'is-info', 'is-success', 'is-warning', 'is-danger']
+        
+        for blog in blogs:
+            blog['tags'] = [{'name': tag, 'color': random.choice(colors)} for tag in blog['tags']]
+        
         context = {
             'blogs': blogs
         }
@@ -105,8 +113,8 @@ class BlogDetailView(View):
                 "title": "Sering Ketinggalan Presensi UTY? Santai, Ada Solusinya!",
                 "thumbnail": "/static/img/lupa-presensi.webp",
                 "image": "/static/img/lupa-presensi-16-9.webp",
-                "date": "Senin, 27 Januari 2025 08:30 WIB",
-                "category": "Tips & Trick",
+                "date": "08:30 WIB Senin, 27 Januari 2025",
+                "tags": ["Tips & Trick"],
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
                 "intro": "Lupa presensi kuliah? Tenang, website ini siap membantu kamu dengan fitur generator kode presensi otomatis yang mudah digunakan!",
@@ -122,8 +130,8 @@ class BlogDetailView(View):
                 "title": "Tips Mengatasi Lupa Presensi di UTY",
                 "thumbnail": "/static/img/tips-presensi.webp",
                 "image": "/static/img/tips-presensi-16-9.webp",
-                "date": "Senin, 27 Januari 2025 08:30 WIB",
-                "category": "Tips",
+                "date": "09:32 WIB Senin, 27 Januari 2025",
+                "tags": ["Tips & Trick"],
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
                 "intro": "Lupa presensi di UTY? Jangan panik! Ikuti tips sederhana ini untuk memastikan kamu tidak lagi ketinggalan presensi.",
@@ -143,8 +151,8 @@ class BlogDetailView(View):
                 "title": "Cara Menggunakan Generator Presensi Otomatis UTY",
                 "thumbnail": "/static/img/cara-presensi.webp",
                 "image": "/static/img/cara-presensi-16-9.webp",
-                "date": "Senin, 27 Januari 2025 08:30 WIB",
-                "category": "Tutorial, Tips Kuliah, Teknologi Kampus",
+                "date": "10:09 WIB Senin, 27 Januari 2025",
+                "tags": ["Tutorial", "Tips Kuliah", "Teknologi Kampus"],
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
                 "intro": "Lupa presensi UTY? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.",
@@ -192,6 +200,10 @@ class BlogDetailView(View):
         
         blog_post = next((item for item in blogs if slugify(item['title']) == title), None)
         other_blogs = [item for item in blogs if slugify(item['title']) != title]
+        
+        colors = ['is-primary', 'is-link', 'is-info', 'is-success', 'is-warning', 'is-danger']
+        
+        blog_post['tags'] = [{'name': tag, 'color': random.choice(colors)} for tag in blog_post['tags']]
         
         if blog_post:
             context = {

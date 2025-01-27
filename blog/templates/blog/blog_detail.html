@@ -9,7 +9,9 @@
 <section class="section">
     <div class="columns">
         <div class="column is-8">
-            <a href="{% url 'blog' %}" class="button is-link is-dark mb-2">Kembali ke Daftar Blog</a>
+            <a href="{% url 'blog' %}" class="button is-link is-dark mb-2">
+                <i class="fas fa-arrow-left"></i> Kembali ke Daftar Blog
+            </a>
             <h1 class="title mb-4">{{ blog.title }}</h1>
             <div class="media">
                 <div class="media-left">
@@ -27,6 +29,9 @@
                     </p>
                 </div>
             </div>
+            {% for tag in blog.tags %}
+                <span class="tag {{ tag.color }} mb-2">{{ tag.name }}</span>
+            {% endfor %}
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-16by9">
