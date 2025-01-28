@@ -1,12 +1,14 @@
 # ✨ Lumina: Jangan Biarkan Presensi Menghantui Kuliahmu! ✨
 
-[![Lumina](staticfiles/img/lumina-16-9.webp)](https://lumina.ridwaanhall.me)
+[![Lumina](staticfiles/img/lumina-16-9.webp)](https://lupa-presensi.vercel.app/)
 
 **Pernahkah kamu merasa panik karena lupa belum presensi kuliah?** Tenang, kamu tidak sendirian! **Lumina** hadir sebagai solusi andalan untuk kamu yang seringkali terlewat melakukan presensi. Kami memahami betapa pentingnya presensi dalam perkuliahan dan tidak ingin hal ini menjadi penghalang kesuksesan akademikmu. Lumina dirancang agar kamu dapat mengatasi masalah lupa belum presensi dengan **mudah, cepat, dan tanpa ribet!**
 
 ## 🤔 Mengapa Lumina Hadir?
 
 Sebagai mahasiswa, kita semua pernah mengalami situasi **lupa belum presensi**. Kami menyadari bahwa **LUpa Min IziN Absen** adalah masalah umum yang bisa terjadi pada siapa saja, terutama di tengah kesibukan aktivitas perkuliahan. Oleh karena itu, Lumina hadir sebagai pengingat bahwa **ketidaksempurnaan manusia seperti lupa belum presensi, tidak boleh menjadi penghalang kesuksesan akademik Anda.** Lumina hadir sebagai solusi atas kelupaan belum presensi.
+
+**Penting untuk diingat:** Lumina diperuntukkan bagi mahasiswa yang *benar-benar lupa* melakukan presensi. **Lumina tidak ditujukan untuk memfasilitasi tindakan bolos atau penyalahgunaan lainnya.** Kami percaya pada integritas akademik dan penggunaan Lumina secara bertanggung jawab.
 
 ## ⚙️ Bagaimana Lumina Bekerja?
 
@@ -76,7 +78,11 @@ Lumina didukung oleh berbagai teknologi canggih untuk memastikan kinerja dan pen
 
 Lumina siap menjadi sahabat setia dalam perjalanan kuliahmu. Kemudahan akses dan tampilan yang intuitif akan membuat hidupmu lebih tenang.
 
-[**Kunjungi Lumina Sekarang!**](https://lumina.ridwaanhall.me)
+[**Kunjungi Lumina Sekarang!**](https://lupa-presensi.vercel.app/)
+
+## 📄 Ketentuan Penggunaan
+
+Dengan menggunakan Lumina, Anda menyetujui [Ketentuan Penggunaan](https://lupa-presensi.vercel.app/terms/).
 
 ---
 
