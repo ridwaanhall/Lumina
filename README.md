@@ -12,9 +12,9 @@ Sebagai mahasiswa, kita semua pernah mengalami situasi **lupa belum presensi**. 
 
 **Lumina adalah generator kode presensi otomatis!** Tidak perlu lagi khawatir jika lupa belum presensi. Caranya sangat mudah:
 
-1.**Copy-Paste:** Salin kode presensi lama yang terenkripsi ke kolom yang tersedia.
-2.**Masukkan Nomor Pertemuan:** Isi nomor pertemuan yang sesuai.
-3.**Buat Presensi Baru:** Klik tombol "Buat Presensi Baru".
+1. **Copy-Paste:** Salin kode presensi lama yang terenkripsi ke kolom yang tersedia.
+2. **Masukkan Nomor Pertemuan:** Isi nomor pertemuan yang sesuai.
+3. **Buat Presensi Baru:** Klik tombol "Buat Presensi Baru".
 
 Dalam sekejap, kamu akan mendapatkan kode presensi baru yang terenkripsi dan siap digunakan! Sangat simpel, bukan? Ini adalah cara cerdas untuk mengatasi masalah **LUpa Min IziN Absen**, terutama saat kamu lupa belum presensi.
 
