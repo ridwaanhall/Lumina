@@ -2,9 +2,9 @@ class BlogData:
     blogs = [
         {
             "title": "Lumina: Jangan Biarkan Lupa Presensi Menghambatmu!",
-            "thumbnail": "/static/img/lumina.webp",
-            "image": "/static/img/lumina-16-9.webp",
-            "date": "08:30 WIB Senin, 27 Januari 2025",
+            "thumbnail": "/img/lumina.webp",
+            "image": "/img/lumina-16-9.webp",
+            "date": "2025-01-27T08:30:00+07:00",
             "tags": [{
                 "name": "Tips & Trick",
                 "color": "is-primary"
@@ -49,9 +49,9 @@ class BlogData:
         },
         {
             "title": "Lupa Presensi? No More! Ini Dia Tips Ampuhnya!",
-            "thumbnail": "/static/img/tips-presensi.webp",
-            "image": "/static/img/tips-presensi-16-9.webp",
-            "date": "09:32 WIB Senin, 27 Januari 2025",
+            "thumbnail": "/img/tips-presensi.webp",
+            "image": "/img/tips-presensi-16-9.webp",
+            "date": "2025-01-27T09:32:00+07:00",
             "tags": [{
                 "name": "Tips & Trick",
                 "color": "is-primary"
@@ -111,9 +111,9 @@ class BlogData:
         },
         {
             "title": "Cara Menggunakan Lumina",
-            "thumbnail": "/static/img/cara-presensi.webp",
-            "image": "/static/img/cara-presensi-16-9.webp",
-            "date": "10:09 WIB Senin, 27 Januari 2025",
+            "thumbnail": "/img/cara-presensi.webp",
+            "image": "/img/cara-presensi-16-9.webp",
+            "date": "2025-01-27T10:09:00+07:00",
             "tags": [
                 {
                     "name": "Tips & Trick",
@@ -211,9 +211,9 @@ class BlogData:
         },
         {
             "title": "Mengapa Kehadiran di Kelas Merupakan Investasi Terbaik untuk Masa Depan Akademikmu",
-            "thumbnail": "/static/img/presensi-penting.webp",
-            "image": "/static/img/presensi-penting-16-9.webp",
-            "date": "15:07 WIB Rabu, 28 Januari 2025",
+            "thumbnail": "/img/presensi-penting.webp",
+            "image": "/img/presensi-penting-16-9.webp",
+            "date": "2025-01-28T15:07:00+07:00",
             "tags": [{
                 "name": "Pendidikan",
                 "color": "is-success" 
