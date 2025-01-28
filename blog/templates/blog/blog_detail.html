@@ -35,7 +35,7 @@
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-16by9">
-                        <img src="{{ blog.image }}" alt="{{ blog.title }}" loading="lazy" />
+                        <img src="{% static blog.image %}" alt="{{ blog.title }}" loading="lazy" />
                     </figure>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                             <!-- Image Column (4/12) -->
                             <div class="column is-4-desktop is-4-tablet is-4-mobile">
                                 <figure class="image is-16by9">
-                                    <img src="{{ other.image }}" 
+                                    <img src="{% static other.image %}" 
                                          alt="{{ other.title }}" 
                                          loading="lazy"
                                     >

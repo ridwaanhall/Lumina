@@ -23,7 +23,7 @@
                         {% if blog.thumbnail %}
                         <div class="card-image">
                             <figure class="image is-1by1">
-                                <img src="{{ blog.thumbnail }}" alt="{{ blog.title }}" loading="lazy" />
+                                <img src="{% static blog.thumbnail %}" alt="{{ blog.title }}" loading="lazy" />
                             </figure>
                         </div>
                         {% endif %}
