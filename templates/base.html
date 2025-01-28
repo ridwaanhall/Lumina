@@ -27,13 +27,22 @@
         <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
     
         <!-- CSS Libraries -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" />
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" as="style" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
     
         <!-- Open Graph (Social Sharing) -->
         <meta property="og:title" content="Lumina: Generator Kode Presensi Otomatis" />
         <meta property="og:description" content="Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah. Hasilkan kode presensi baru yang siap pakai dalam hitungan detik." />
-        <meta property="og:image" content="{% static 'img/lumina-1-91-1.webp' %}" />
+        <meta property="og:image" content="{% static 'img/lumina-16-9-191-1.webp' %}" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Lumina: Generator Kode Presensi Otomatis" />
         <meta property="og:url" content="{% url 'absen-disini' %}" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Lumina" />
@@ -43,7 +52,9 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Lumina: Generator Kode Presensi Otomatis" />
         <meta name="twitter:description" content="Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah. Hasilkan kode presensi baru yang siap pakai dalam hitungan detik." />
-        <meta name="twitter:image:src" content="{% static 'img/lumina-1-91-1.webp' %}" />
+        <meta name="twitter:image:src" content="{% static 'img/lumina-16-9-191-1.webp' %}" />
+        <meta name="twitter:site" content="@ridwaanhall" />
+        <meta name="twitter:creator" content="@ridwaanhall" />
     
         <!-- Application and Theme -->
         <meta name="application-name" content="Lumina" />
@@ -63,7 +74,7 @@
                 "name": "Lumina",
                 "url": "{% url 'absen-disini' %}",
                 "description": "Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah.",
-                "image": "{% static 'img/lumina-1-91-1.webp' %}",
+                "image": "{% static 'img/lumina-16-9-191-1.webp' %}",
                 "publisher": {
                     "@type": "Person",
                     "name": "ridwaanhall"
