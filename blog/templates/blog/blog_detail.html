@@ -46,21 +46,34 @@
 
         <div class="column is-4">
             <div class="content">
-                <h4>Artikel Lainnya</h4>
-                {% for other in other_blogs %}
-                    <div class="media">
-                        <div class="media-left">
-                            <figure class="image is-48x48">
-                                <img src="{{ other.thumbnail }}" alt="{{ other.title }}" loading="lazy" />
-                            </figure>
-                        </div>
-                        <div class="media-content">
-                            <p class="subtitle is-6">
-                                <a href="{% url 'blog' %}{{ other.title|slugify }}">{{ other.title }}</a>
-                            </p>
+                <h4 class="title is-4 mb-4">Artikel Lainnya</h4>
+                <div class="columns is-multiline">
+                    {% for other in other_blogs %}
+                    <div class="column is-12 mb-4">
+                        <div class="columns is-vcentered is-mobile">
+                            <!-- Image Column (4/12) -->
+                            <div class="column is-4-desktop is-4-tablet is-4-mobile">
+                                <figure class="image is-16by9">
+                                    <img src="{{ other.image }}" 
+                                         alt="{{ other.title }}" 
+                                         loading="lazy"
+                                    >
+                                </figure>
+                            </div>
+                            
+                            <!-- Title Column (8/12) -->
+                            <div class="column is-8-desktop is-8-tablet is-8-mobile">
+                                <div class="content">
+                                    <a href="{% url 'blog' %}{{ other.title|slugify }}" 
+                                       class="is-size-6">
+                                       {{ other.title }}
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

@@ -4,73 +4,75 @@
 {% block title %}Daftar Blog | Blog{% endblock %}
 
 {% block content %}
-<section class="hero is-primary is-bold card">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">Daftar Blog</h1>
-            <h2 class="subtitle">Berikut adalah daftar artikel blog yang tersedia.</h2>
-        </div>
-    </div>
-</section>
-
 <section class="section">
-    <div class="container">
-        <div class="columns is-multiline">
-            {% for blog in blogs %}
-            <div class="column is-full-tablet is-half-desktop is-one-third-widescreen">
-                <div class="card">
-                    {% if blog.thumbnail %}
-                    <div class="card-image">
-                        <figure class="image is-1by1">
-                            <img src="{{ blog.thumbnail }}" alt="{{ blog.title }}" loading="lazy" />
-                        </figure>
-                    </div>
-                    {% endif %}
-
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="{% static 'favicon.ico' %}" alt="ridwaanhall second icon" />
-                                </figure>
-                            </div>
-                            <div class="media-content">
-                                <p class="title is-4">{{ blog.name }}
-                                </p>
-                                <p class="subtitle is-6">
-                                    <a href="http://absen-uty.vercel.app/@ridwaanhall">@{{ blog.username }}
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                
-                        <div class="content">
-                            {% for tag in blog.tags %}
-                                <span class="tag {{ tag.color }}">{{ tag.name }}</span>
-                            {% endfor %}
-                            <h3 class="title is-4 mt-2 mb-2">
-                                <a href="{% url 'blog' %}{{ blog.title|slugify }}">{{ blog.title }}</a>
-                            </h3>
-                            <p class="mt-1">{{ blog.intro|truncatewords:30 }}</p>
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item">
-                            <span>
-                                <time datetime="{{ blog.date }}">{{ blog.date }}</time>
-                            </span>
-                        </p>
-                    </footer>
-                </div>
+    <section class="hero is-primary is-bold card">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Daftar Blog</h1>
+                <h2 class="subtitle">Berikut adalah daftar artikel blog yang tersedia.</h2>
             </div>
-            {% empty %}
-            <div class="column">
-                <p class="has-text-centered">Belum ada artikel blog saat ini.</p>
-            </div>
-            {% endfor %}
         </div>
-    </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                {% for blog in blogs %}
+                <div class="column is-half-tablet is-half-desktop is-one-third-widescreen">
+                    <div class="card">
+                        {% if blog.thumbnail %}
+                        <div class="card-image">
+                            <figure class="image is-1by1">
+                                <img src="{{ blog.thumbnail }}" alt="{{ blog.title }}" loading="lazy" />
+                            </figure>
+                        </div>
+                        {% endif %}
+
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="{% static 'favicon.ico' %}" alt="ridwaanhall second icon" />
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">{{ blog.name }}
+                                    </p>
+                                    <p class="subtitle is-6">
+                                        <a href="http://absen-uty.vercel.app/@ridwaanhall">@{{ blog.username }}
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                    
+                            <div class="content">
+                                {% for tag in blog.tags %}
+                                    <span class="tag {{ tag.color }}">{{ tag.name }}</span>
+                                {% endfor %}
+                                <h3 class="title is-4 mt-2 mb-2">
+                                    <a href="{% url 'blog' %}{{ blog.title|slugify }}">{{ blog.title }}</a>
+                                </h3>
+                                <p class="mt-1">{{ blog.intro|truncatewords:30 }}</p>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <span>
+                                    <time datetime="{{ blog.date }}">{{ blog.date }}</time>
+                                </span>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="column">
+                    <p class="has-text-centered">Belum ada artikel blog saat ini.</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 </section>
 {% endblock %}
 

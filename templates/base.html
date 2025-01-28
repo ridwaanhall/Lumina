@@ -13,7 +13,8 @@
 
         <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
         
-        <script src="https://kit.fontawesome.com/17dd18b72c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
 
         <!-- Canonical URL -->
@@ -64,8 +65,28 @@
     <body>
         {% include 'navbar.html' %}
         <section class="section">
-            {% block content %} {% endblock %}
+            {% block content %}
+            {% endblock %}
         </section>
+
+        {% include 'footer.html' %}
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            });
+        </script>
+
+        {% block script %}
+        {% endblock %}
     </body>
-    {% block script %} {% endblock %}
 </html>

@@ -1,37 +1,66 @@
 {% load static %}
-<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="{% url 'absen_view' %}">
-            <img src="{% static 'favicon.ico' %}" alt="ridwaanhall second icon"> <strong>LUPA PRESENSI UTY</strong>
-        </a>
-    </div>
-    <div class="navbar-end">
-        <div class="navbar-item">
-            <div class="field is-grouped">
-                <p class="control">
-                    <a class="button is-link" href="{% url 'lanpage' %}">
-                        <span class="icon">
-                            <i class="fa-solid fa-cloud"></i>
-                        </span>
-                        <span>Landing Page</span>
-                    </a>
-                </p>
-                <p class="control">
-                    <a class="bd-tw-button button" href="https://saweria.co/ridwaanhall">
-                        <span class="icon">
-                            <i class="fa-solid fa-sack-dollar"></i>
-                        </span>
-                        <span> Buang Duitmu Disini </span>
-                    </a>
-                </p>
-                <p class="control">
-                    <a class="button is-warning" href="{% url 'blog' %}">
-                        <span class="icon">
-                            <i class="fa-solid fa-blog"></i>
-                        </span>
-                        <span>Blog</span>
-                    </a>
-                </p>
+<nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{% url 'absen_view' %}">
+                <img src="{% static 'favicon.ico' %}" alt="UTY Presensi Icon">
+                <strong class="ml-2">LUPA PRESENSI UTY</strong>
+            </a>
+
+            <!-- Mobile menu toggle -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="navbarMenu">
+            <div class="navbar-start">
+                <a href="{% url 'absen_view' %}" class="navbar-item {% if request.resolver_match.url_name == 'absen_view' %}is-underlined is-italic has-text-weight-bold{% endif %}">
+                    Home
+                </a>
+            
+                <a href="{% url 'blog' %}" class="navbar-item {% if request.resolver_match.url_name == 'blog' or request.resolver_match.url_name == 'blog-detail' %}is-underlined is-italic has-text-weight-bold{% endif %}">
+                    Blog
+                </a>                
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <!-- Desktop View -->
+                        <div class="is-hidden-mobile">
+                            <a class="button is-link" href="{% url 'lanpage' %}">
+                                <span class="icon">
+                                    <i class="fa-solid fa-cloud"></i>
+                                </span>
+                                <span>Landing Page</span>
+                            </a>
+                            <a class="button is-warning" href="https://saweria.co/ridwaanhall">
+                                <span class="icon">
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </span>
+                                <span>Buang Duitmu Disini</span>
+                            </a>
+                        </div>
+
+                        <!-- Mobile View -->
+                        <div class="is-hidden-tablet">
+                            <a class="button is-link is-fullwidth mb-2" href="{% url 'lanpage' %}">
+                                <span class="icon">
+                                    <i class="fa-solid fa-cloud"></i>
+                                </span>
+                                <span>Landing Page</span>
+                            </a>
+                            <a class="button is-warning is-fullwidth mb-2" href="https://saweria.co/ridwaanhall">
+                                <span class="icon">
+                                    <i class="fa-solid fa-sack-dollar"></i>
+                                </span>
+                                <span>Buang Duitmu Disini</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
