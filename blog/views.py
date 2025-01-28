@@ -53,7 +53,7 @@ class BlogListView(View):
                 "tags": ["Tutorial", "Tips Kuliah", "Teknologi Kampus"],
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
-                "intro": "Lupa presensi UTY? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.",
+                "intro": "Lupa presensi pas kuliah? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.",
                 "content": """
                     <p>Generator presensi otomatis ini adalah fitur andalan kami yang dirancang untuk membantu mahasiswa UTY mengatasi masalah lupa presensi. Dengan fitur ini, kamu bisa menghasilkan kode presensi baru secara otomatis, berdasarkan kode presensi lama yang kamu miliki. Yuk, simak panduan lengkapnya:</p>
                     
@@ -155,7 +155,7 @@ class BlogDetailView(View):
                 "tags": ["Tutorial", "Tips Kuliah", "Teknologi Kampus"],
                 "username": "ridwaanhall",
                 "name": "Ridwan Halim",
-                "intro": "Lupa presensi UTY? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.",
+                "intro": "Lupa presensi pas kuliah? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.",
                 "content": """
                     <p>Generator presensi otomatis ini adalah fitur andalan kami yang dirancang untuk membantu mahasiswa UTY mengatasi masalah lupa presensi. Dengan fitur ini, kamu bisa menghasilkan kode presensi baru secara otomatis, berdasarkan kode presensi lama yang kamu miliki. Yuk, simak panduan lengkapnya:</p>
                     
