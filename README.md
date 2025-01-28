@@ -21,3 +21,4 @@ Keunggulan website ini jelas banget, yaitu bisa kasih solusi instan kalau kamu l
 ## Ingat! Matikan Dulu Adblock dan Hubungi Kami Kalau Perlu Bantuan
 
 Mungkin ada sedikit kendala teknis, terutama kalau kamu pakai adblocker atau ekstensi browser lainnya. Jadi, buat sementara, adblocker-nya dimatiin dulu ya biar website-nya bisa berfungsi dengan lancar. Kami juga terus berusaha buat ningkatin kualitas dan performa website ini biar selalu kasih yang terbaik buat kamu. Kalau ada pertanyaan atau butuh bantuan, jangan sungkan buat hubungi kami ya! Semoga dengan website ini, masalah lupa presensi bisa lebih mudah teratasi, ya!
+
