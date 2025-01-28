@@ -2,8 +2,8 @@
 <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item" href="{% url 'absen_view' %}">
-                <img src="{% static 'favicon.ico' %}" alt="UTY Presensi Icon">
+            <a class="navbar-item" href="{% url 'absen-disini' %}">
+                <img src="{% static 'icon-32x32.png' %}" alt="Kucing Legend" width="28" height="28" />
                 <strong class="ml-2">LUPA PRESENSI UTY</strong>
             </a>
 
@@ -17,7 +17,7 @@
 
         <div class="navbar-menu" id="navbarMenu">
             <div class="navbar-start">
-                <a href="{% url 'absen_view' %}" class="navbar-item {% if request.resolver_match.url_name == 'absen_view' %}is-underlined is-italic has-text-weight-bold{% endif %}">
+                <a href="{% url 'absen-disini' %}" class="navbar-item {% if request.resolver_match.url_name == 'absen-disini' %}is-underlined is-italic has-text-weight-bold{% endif %}">
                     Home
                 </a>
             

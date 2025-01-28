@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import AbsenView
+from . import views
 
 urlpatterns = [
-    path('', AbsenView.as_view(), name='absen_view'),
+    path('', views.AbsenDisiniView.as_view(), name='absen-disini'),
 ]
