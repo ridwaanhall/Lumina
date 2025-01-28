@@ -98,21 +98,47 @@
         <link rel="prefetch" href="{% static 'icon-32x32.png' %}" as="image" />
     
         <!-- Schema.org JSON-LD -->
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                "name": "Lumina",
-                "url": "{% og_url %}",
-                "description": "Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah.",
-                "image": "{% static 'img/lumina-16-9-191-1.webp' %}",
-                "datePublished": "2025-01-26",
-                "publisher": {
-                    "@type": "Person",
-                    "name": "ridwaanhall"
+        {% if request.resolver_match.url_name == 'blog-detail' %}
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "headline": "{{ blog.title }}",
+                    "image": "{% static blog.image %}",
+                    "datePublished": "{{ blog.date }}",
+                    "dateModified": "{{ blog.date }}",
+                    "author": {
+                        "@type": "Person",
+                        "name": "ridwaanhall"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Lumina",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "{% static 'img/lumina-16-9-191-1.webp' %}"
+                        }
+                    },
+                    "description": "{{ blog.intro }}"
                 }
-            }
-        </script>
+            </script>
+        {% else %}
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "WebSite",
+                    "name": "Lumina",
+                    "url": "{% og_url %}",
+                    "description": "Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah.",
+                    "image": "{% static 'img/lumina-16-9-191-1.webp' %}",
+                    "datePublished": "2025-01-26",
+                    "publisher": {
+                        "@type": "Person",
+                        "name": "ridwaanhall"
+                    }
+                }
+            </script>
+        {% endif %}
     </head>
     <body>
         {% include 'navbar.html' %}
