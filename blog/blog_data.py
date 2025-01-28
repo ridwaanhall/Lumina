@@ -99,8 +99,8 @@ class BlogData:
                     </div>
                     <div class="column is-full">
                         <div class="box">
-                            <h3 class="title is-4"><span class="tag is-primary">5</span> Manfaatkan Generator Presensi Otomatis</h3>
-                            <p>Sudah terlanjur lupa? Jangan khawatir! Gunakan <a href="https://lupa-presensi.vercel.app/" target="_blank" class="has-text-link">generator presensi otomatis</a> di website ini sebagai solusi cepat.</p>
+                            <h3 class="title is-4"><span class="tag is-primary">5</span> Manfaatkan Lumina</h3>
+                            <p>Sudah terlanjur lupa? Jangan khawatir! Gunakan <a href="https://lupa-presensi.vercel.app/" target="_blank" class="has-text-link">Lumina</a> di website ini sebagai solusi cepat.</p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ class BlogData:
             """
         },
         {
-            "title": "Cara Menggunakan Generator Presensi Otomatis",
+            "title": "Cara Menggunakan Lumina",
             "thumbnail": "/static/img/cara-presensi.webp",
             "image": "/static/img/cara-presensi-16-9.webp",
             "date": "10:09 WIB Senin, 27 Januari 2025",
@@ -130,18 +130,18 @@ class BlogData:
             ],
             "username": "ridwaanhall",
             "name": "Ridwan Halim",
-            "intro": "Lupa presensi pas kuliah? Kami punya solusinya: Generator Presensi Otomatis. Ikuti panduannya di artikel ini.",
+            "intro": "Lupa presensi pas kuliah? Kami punya solusinya: Lumina. Ikuti panduannya di artikel ini.",
             "content": """
                 <p>
-                    Fitur andalan kami, <strong>Generator Presensi Otomatis</strong>, hadir untuk menyelamatkan kamu dari masalah lupa presensi. Dengan alat ini, kamu bisa membuat kode presensi baru dengan mudah, hanya bermodalkan kode presensi lama. Yuk,
+                    Fitur andalan kami, <strong>Lumina</strong>, hadir untuk menyelamatkan kamu dari masalah lupa presensi. Dengan alat ini, kamu bisa membuat kode presensi baru dengan mudah, hanya bermodalkan kode presensi lama. Yuk,
                     ikuti panduan <em>super simple</em> berikut ini!
                 </p>
 
                 <div class="columns is-multiline">
                     <div class="column is-full">
                         <div class="box">
-                            <h3 class="title is-4"><span class="tag is-primary">1</span> Akses Generator Presensi</h3>
-                            <p>Pertama-tama, buka halaman <a href="https://lupa-presensi.vercel.app/" target="_blank" class="has-text-info">Generator Presensi</a> kami. Tampilannya <em>simple</em> dan mudah banget dimengerti, kok!</p>
+                            <h3 class="title is-4"><span class="tag is-primary">1</span> Akses Lumina</h3>
+                            <p>Pertama-tama, buka halaman <a href="https://lupa-presensi.vercel.app/" target="_blank" class="has-text-info">Lumina</a> kami. Tampilannya <em>simple</em> dan mudah banget dimengerti, kok!</p>
                         </div>
                     </div>
 
@@ -193,7 +193,7 @@ class BlogData:
                 </div>
                 <div class="notification is-warning mt-3">
                     <h3 class="title is-5 has-text-centered">Penting! Perhatian untuk AdBlock!</h3>
-                    <p>Jika generator presensi tidak bekerja dengan baik, coba <strong>nonaktifkan dulu AdBlock</strong> di browser kamu. Lalu, <em>refresh</em> halaman dan coba lagi. Kami selalu berusaha untuk memberikan pengalaman terbaik untukmu!</p>
+                    <p>Jika Lumina tidak bekerja dengan baik, coba <strong>nonaktifkan dulu AdBlock</strong> di browser kamu. Lalu, <em>refresh</em> halaman dan coba lagi. Kami selalu berusaha untuk memberikan pengalaman terbaik untukmu!</p>
                 </div>
 
                 <h3 class="title is-4">💡 Tips Tambahan!</h3>
@@ -204,7 +204,7 @@ class BlogData:
                 </ul>
 
                 <p>
-                    Jadi, tunggu apa lagi? Jangan biarkan lupa presensi menghantui harimu! Langsung saja menuju halaman <a href="https://lupa-presensi.vercel.app/" target="_blank" class="button is-primary is-small">Generator Presensi</a> sekarang dan
+                    Jadi, tunggu apa lagi? Jangan biarkan lupa presensi menghantui harimu! Langsung saja menuju halaman <a href="https://lupa-presensi.vercel.app/" target="_blank" class="button is-primary is-small">Lumina</a> sekarang dan
                     nikmati kemudahan presensi tanpa ribet! 😎
                 </p>
             """
