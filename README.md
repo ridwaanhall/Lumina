@@ -1,37 +1,83 @@
 # ✨ Lumina: Jangan Biarkan Presensi Menghantui Kuliahmu! ✨
 
-![Lumina](staticfiles/img/lumina-16-9.webp)
+[![Lumina](staticfiles/img/lumina-16-9.webp)](https://lumina.ridwaanhall.me)
 
-## 😴 Sering Lupa Presensi? Tenang, Kami Punya Solusinya!
+**Pernahkah kamu merasa panik karena lupa belum presensi kuliah?** Tenang, kamu tidak sendirian! **Lumina** hadir sebagai solusi andalan untuk kamu yang seringkali terlewat melakukan presensi. Kami memahami betapa pentingnya presensi dalam perkuliahan dan tidak ingin hal ini menjadi penghalang kesuksesan akademikmu. Lumina dirancang agar kamu dapat mengatasi masalah lupa belum presensi dengan **mudah, cepat, dan tanpa ribet!**
 
-Pernah nggak sih merasa panik karena tiba-tiba ingat belum presensi kuliah? 😅 Jangan khawatir, kamu nggak sendirian kok! Lumina hadir sebagai **pahlawan penyelamat** bagi kamu yang seringkali terjebak dalam drama lupa presensi. Kami memahami betapa krusialnya presensi dalam perkuliahan, dan tentu saja, kita tidak ingin ada masalah gara-gara hal sepele ini, kan? 😎 Nah, website ini adalah jawabannya! Dirancang khusus agar kamu bisa mengatasi masalah presensi dengan **mudah, cepat, dan tanpa ribet!**
+## 🤔 Mengapa Lumina Hadir?
 
-## 🚀 Fitur Unggulan: Generator Kode Presensi Otomatis!
+Sebagai mahasiswa, kita semua pernah mengalami situasi **lupa belum presensi**. Kami menyadari bahwa **LUpa Min IziN Absen** adalah masalah umum yang bisa terjadi pada siapa saja, terutama di tengah kesibukan aktivitas perkuliahan. Oleh karena itu, Lumina hadir sebagai pengingat bahwa **ketidaksempurnaan manusia seperti lupa belum presensi, tidak boleh menjadi penghalang kesuksesan akademik Anda.** Lumina hadir sebagai solusi atas kelupaan belum presensi.
 
-Lumina dibekali dengan fitur andalan, yaitu **generator kode presensi otomatis**! Jadi, nggak perlu lagi deg-degan kalau lupa presensi. Caranya juga super gampang:
+## ⚙️ Bagaimana Lumina Bekerja?
 
-1. **Copy-Paste Kode Lama:** Salin kode presensi lama kamu yang terenkripsi ke kolom yang sudah disediakan.
-2. **Masukkan Nomor Pertemuan:** Isi nomor pertemuan perkuliahan.
-3. **Klik "Buat Presensi Baru":** Website akan memproses data dan voila!
+**Lumina adalah generator kode presensi otomatis!** Tidak perlu lagi khawatir jika lupa belum presensi. Caranya sangat mudah:
 
-Dalam sekejap, kamu akan mendapatkan **kode presensi baru yang terenkripsi** dan siap digunakan! Praktis banget, kan? 😉
+1.**Copy-Paste:** Salin kode presensi lama yang terenkripsi ke kolom yang tersedia.
+2.**Masukkan Nomor Pertemuan:** Isi nomor pertemuan yang sesuai.
+3.**Buat Presensi Baru:** Klik tombol "Buat Presensi Baru".
 
-## 🎨 Desain Simpel, Penggunaan Anti Ribet!
+Dalam sekejap, kamu akan mendapatkan kode presensi baru yang terenkripsi dan siap digunakan! Sangat simpel, bukan? Ini adalah cara cerdas untuk mengatasi masalah **LUpa Min IziN Absen**, terutama saat kamu lupa belum presensi.
 
-Kami mengerti betul, teknologi seharusnya **mempermudah hidup**, bukan malah menambah pusing. Oleh karena itu, Lumina hadir dengan **desain yang simpel, bersih, dan intuitif**. Kamu tidak perlu khawatir meskipun bukan seorang *tech-savvy*. Prosesnya pun mudah dan cepat. Cukup beberapa langkah, dan kode presensi kamu langsung beres! Waktu kamu pun jadi lebih efisien untuk hal-hal yang lebih penting. 💯
+## 💫 Desain Intuitif, Mudah Digunakan Saat Panik
 
-## ✅ Manfaat Nyata: Presensi Aman, Kuliah Tenang!
+Kami menyadari bahwa teknologi seharusnya memudahkan hidup, terutama saat kita sedang menghadapi situasi **lupa belum presensi**. Oleh karena itu, Lumina dirancang dengan antarmuka yang **simpel, bersih, dan mudah dipahami.** Bahkan jika kamu tidak terlalu ahli dalam teknologi, kamu tidak perlu khawatir. Prosesnya pun sangat mudah dan tidak ribet, bahkan dalam keadaan panik karena lupa belum presensi. Hanya dengan beberapa langkah sederhana, kode presensi kamu akan langsung tersedia. Dengan demikian, waktu kamu menjadi lebih efektif untuk hal-hal yang lebih penting, bukan malah terbuang karena khawatir soal lupa belum presensi.
 
-Keunggulan Lumina sangat jelas: **memberikan solusi instan** jika kamu lupa presensi. Dengan generator kode presensi otomatis, kamu bisa menghindari masalah atau sanksi yang tidak diinginkan akibat telat atau lupa presensi.
+## 🚀 Keunggulan Lumina
 
-- **Akses Dimana Saja, Kapan Saja:** Website ini dapat diakses melalui laptop maupun ponsel.
-- **Enkripsi Aman:** Proses enkripsi kode sangat aman, jadi kamu bisa menggunakan kode tanpa khawatir.
-- **Kuliah Lebih Tenang:** Dengan Lumina, kamu bisa fokus pada perkuliahan tanpa terbebani masalah presensi.
+- **Solusi Instan:** Memberikan solusi cepat dan tepat untuk masalah lupa belum presensi.
+- **Generator Kode Otomatis:** Menghasilkan kode presensi baru dalam sekejap.
+- **Akses Mudah:** Dapat diakses kapan saja dan di mana saja, baik melalui laptop maupun HP!
+- **Enkripsi Aman:** Proses enkripsi kode presensi aman dan terpercaya.
 
-## ⚠️ Penting! Matikan Adblock dan Jangan Ragu Menghubungi Kami!
+## ⚠️ Catatan Penting
 
-Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan *adblocker* atau ekstensi browser lainnya. Untuk sementara, matikan dulu ya adblocker-nya agar website dapat berfungsi dengan lancar.
+Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan adblocker atau ekstensi browser lainnya. Untuk sementara waktu, **nonaktifkan adblocker** agar Lumina dapat berfungsi dengan lancar, terutama saat kamu sedang panik karena lupa belum presensi. Kami terus berupaya untuk meningkatkan kualitas dan performa Lumina agar selalu memberikan yang terbaik bagi pengguna.
 
-Kami terus berupaya untuk meningkatkan kualitas dan performa Lumina agar selalu memberikan yang terbaik untukmu. Jika ada pertanyaan atau butuh bantuan, jangan sungkan untuk menghubungi kami ya! 🙏
+## 📞 Butuh Bantuan?
 
-Semoga dengan Lumina, masalah lupa presensi bisa teratasi dengan mudah! Selamat belajar! 🎉
+Jika ada pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami! Kami hadir untuk membantu Anda mengatasi masalah lupa belum presensi.
+
+## 💻 Intip Tampilan Lumina
+
+Berikut adalah cuplikan antarmuka Lumina:
+
+![Lumina Interface](public/Lumina.png)
+
+## 🚀 Performa Teruji: PageSpeed Insights
+
+Kami berkomitmen untuk memberikan pengalaman terbaik, termasuk kecepatan akses. Lihat sendiri hasil uji performa Lumina menggunakan PageSpeed Insights:
+
+**[Lihat Hasil PageSpeed Insights](https://pagespeed.web.dev/analysis/https-lumina-ridwaanhall-me/wxlbbi2myv)**
+
+### Desktop
+
+![PageSpeed Insights Desktop](public/PageSpeed-Insights-desktop.png)
+
+### Mobile
+
+![PageSpeed Insights Mobile](public/PageSpeed-Insights-mobile.png)
+
+## 🛠️ Teknologi yang Kami Gunakan
+
+Lumina didukung oleh berbagai teknologi canggih untuk memastikan kinerja dan pengalaman pengguna yang optimal:
+
+- **Analitik:** Cloudflare Browser Insights
+- **Keamanan:** HSTS
+- **Font:** Font Awesome (6.4.0)
+- **Fitur Lain-lain:** PWA (Progressive Web App), Open Graph, HTTP/3
+- **CDN:** jsDelivr, cdnjs, Cloudflare
+- **Library JavaScript:** crypto-js (4.1.1)
+- **Platform Hosting:** Vercel
+- **Framework UI:** Bulma (1.0.2)
+- **Real User Monitoring (RUM):** Cloudflare Browser Insights
+- **Performa:** Cloudflare Zaraz
+
+## 🚀 Jangan Biarkan Lupa Absen Mengganggumu
+
+Lumina siap menjadi sahabat setia dalam perjalanan kuliahmu. Kemudahan akses dan tampilan yang intuitif akan membuat hidupmu lebih tenang.
+
+[**Kunjungi Lumina Sekarang!**](https://lumina.ridwaanhall.me)
+
+---
+
+### #Lumina #LupaAbsen #SolusiAbsensi #AbsenKuliah #Mahasiswa #GeneratorPresensi #TeknologiPendidikan #PWA #Cloudflare #Vercel #Bulma
