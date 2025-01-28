@@ -1,5 +1,5 @@
 """
-WSGI config for UTY project.
+WSGI config for LUMINA project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'UTY.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'LUMINA.settings')
 
 application = get_wsgi_application()
 

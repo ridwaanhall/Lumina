@@ -1,6 +1,6 @@
 {
     "builds": [{
-      "src": "UTY/wsgi.py",
+      "src": "LUMINA/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.12.0" }
     }],
@@ -11,7 +11,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "UTY/wsgi.py"
+        "dest": "LUMINA/wsgi.py"
       }
     ]
 }
