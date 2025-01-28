@@ -1,10 +1,10 @@
-# LUPA PRESENSI UTY
+# LUPA PRESENSI
 
-![LUPA PRESENSI UTY](staticfiles/img/lupa-presensi-2.webp)
+![LUPA PRESENSI](staticfiles/img/lupa-presensi-2.webp)
 
 ## Sering Ketinggalan Presensi? Santai, Ada Solusinya
 
-Siapa sih yang nggak pernah lupa presensi kuliah? Tenang aja, kamu nggak sendirian kok! Website ini hadir sebagai penyelamat buat kamu, mahasiswa Universitas Teknologi Yogyakarta (UTY), yang seringkali kejebak lupa presensi. Kami ngerti banget deh, betapa pentingnya presensi buat perkuliahan dan pastinya nggak mau ada masalah kan gara-gara ini? Nah, website ini solusinya, dirancang khusus biar kamu bisa atasi masalah ini dengan gampang, cepat, dan nggak ribet!
+Siapa sih yang nggak pernah lupa presensi kuliah? Tenang aja, kamu nggak sendirian kok! Website ini hadir sebagai penyelamat buat kamu, yang seringkali kejebak lupa presensi. Kami ngerti banget deh, betapa pentingnya presensi buat perkuliahan dan pastinya nggak mau ada masalah kan gara-gara ini? Nah, website ini solusinya, dirancang khusus biar kamu bisa atasi masalah ini dengan gampang, cepat, dan nggak ribet!
 
 ## Fitur Canggih: Generator Kode Presensi Otomatis
 
