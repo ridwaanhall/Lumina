@@ -8,7 +8,7 @@ Pernah nggak sih merasa panik karena tiba-tiba ingat belum presensi kuliah? 😅
 
 ## 🚀 Fitur Unggulan: Generator Kode Presensi Otomatis!
 
-Lumina dibekali dengan fitur andalan, yaitu **generator kode presensi otomatis**! Jadi, nggak perlu lagi deg-degan kalau lupa absen. Caranya juga super gampang:
+Lumina dibekali dengan fitur andalan, yaitu **generator kode presensi otomatis**! Jadi, nggak perlu lagi deg-degan kalau lupa presensi. Caranya juga super gampang:
 
 1. **Copy-Paste Kode Lama:** Salin kode presensi lama kamu yang terenkripsi ke kolom yang sudah disediakan.
 2. **Masukkan Nomor Pertemuan:** Isi nomor pertemuan perkuliahan.
@@ -22,7 +22,7 @@ Kami mengerti betul, teknologi seharusnya **mempermudah hidup**, bukan malah men
 
 ## ✅ Manfaat Nyata: Presensi Aman, Kuliah Tenang!
 
-Keunggulan Lumina sangat jelas: **memberikan solusi instan** jika kamu lupa presensi. Dengan generator kode presensi otomatis, kamu bisa menghindari masalah atau sanksi yang tidak diinginkan akibat telat atau lupa absen.
+Keunggulan Lumina sangat jelas: **memberikan solusi instan** jika kamu lupa presensi. Dengan generator kode presensi otomatis, kamu bisa menghindari masalah atau sanksi yang tidak diinginkan akibat telat atau lupa presensi.
 
 - **Akses Dimana Saja, Kapan Saja:** Website ini dapat diakses melalui laptop maupun ponsel.
 - **Enkripsi Aman:** Proses enkripsi kode sangat aman, jadi kamu bisa menggunakan kode tanpa khawatir.
