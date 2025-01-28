@@ -1,9 +1,9 @@
 class BlogData:
     blogs = [
         {
-            "title": "Sering Ketinggalan Presensi? Santai, Ada Solusinya!",
-            "thumbnail": "/static/img/lupa-presensi.webp",
-            "image": "/static/img/lupa-presensi-16-9.webp",
+            "title": "Lumina: Jangan Biarkan Lupa Presensi Menghambatmu!",
+            "thumbnail": "/static/img/lumina.webp",
+            "image": "/static/img/lumina-16-9.webp",
             "date": "08:30 WIB Senin, 27 Januari 2025",
             "tags": [{
                 "name": "Tips & Trick",
@@ -11,40 +11,40 @@ class BlogData:
             }],
             "username": "ridwaanhall",
             "name": "Ridwan Halim",
-            "intro": "Lupa presensi kuliah? Tenang, website ini siap membantu kamu dengan fitur generator kode presensi otomatis yang mudah digunakan!",
+            "intro": "Lumina hadir sebagai solusi cerdas untuk mengatasi masalah lupa presensi kuliah!",
             "content": """
                 <p>
-                    <em>Siapa sih yang nggak pernah lupa presensi kuliah?</em> Tenang aja, kamu nggak sendirian kok! Website ini hadir sebagai penyelamat buat kamu yang seringkali kejebak lupa presensi. Kami ngerti banget deh, betapa pentingnya presensi
-                    buat perkuliahan dan pastinya nggak mau ada masalah kan gara-gara ini? Nah, website ini solusinya, dirancang khusus biar kamu bisa atasi masalah ini dengan gampang, cepat, dan nggak ribet!
+                    <em>Pernahkah kamu merasa panik karena lupa presensi kuliah?</em> Tenang, kamu tidak sendirian! Lumina hadir sebagai solusi untuk kamu yang seringkali terlewat presensi. Kami memahami betul betapa pentingnya presensi dalam perkuliahan
+                    dan tidak ingin hal ini menjadi penghalang. Lumina hadir sebagai solusi praktis yang dirancang agar kamu dapat mengatasi masalah ini dengan mudah, cepat, dan tanpa ribet!
                 </p>
 
-                <h4>Fitur Andalan: Generator Kode Presensi Otomatis</h4>
+                <h4>Lumina: Generator Kode Presensi Otomatis</h4>
                 <p>
-                    Website ini punya fitur andalan, yaitu <strong>generator kode presensi otomatis!</strong> Jadi, nggak perlu lagi panik kalau lupa presensi. Caranya gampang banget: <em>copy-paste</em> aja kode presensi lama kamu yang dienkripsi ke kolom
-                    yang udah disediain, terus masukin nomor pertemuan. Tinggal klik tombol "Buat Presensi Baru" dan website ini langsung memproses kodenya. Nggak pake lama, kamu langsung dapat kode presensi baru yang dienkripsi dan siap pakai!
-                    <strong>Simple banget, kan?</strong>
+                    Fitur utama Lumina adalah <strong>generator kode presensi otomatis!</strong> Tidak perlu lagi khawatir jika lupa presensi. Caranya sangat mudah: cukup <em>copy-paste</em> kode presensi lama yang terenkripsi ke kolom yang tersedia, lalu
+                    masukkan nomor pertemuan. Klik tombol "Buat Presensi Baru" dan Lumina akan langsung memproses kode tersebut. Dalam sekejap, kamu akan mendapatkan kode presensi baru yang terenkripsi dan siap digunakan!
+                    <strong>Sangat simpel, bukan?</strong>
                 </p>
 
-                <h4>Desain Simpel dan Mudah Digunakan</h4>
+                <h4>Desain Antarmuka Pengguna yang Intuitif</h4>
                 <p>
-                    Kami sadar banget, yang namanya teknologi itu harusnya bikin hidup lebih mudah, bukan malah bikin pusing. Makanya, website ini didesain dengan tampilan yang simpel, bersih, dan gampang banget dimengerti. Jadi, kamu nggak perlu khawatir
-                    kalau nggak terlalu jago soal teknologi. Prosesnya juga mudah banget, nggak perlu ribet, cukup beberapa langkah, dan kode presensi kamu langsung beres. Waktu kamu pun jadi lebih efektif buat hal-hal yang lebih penting.
+                    Kami menyadari bahwa teknologi seharusnya memudahkan hidup, bukan mempersulit. Oleh karena itu, Lumina dirancang dengan antarmuka yang simpel, bersih, dan mudah dipahami. Bahkan jika kamu tidak terlalu ahli dalam teknologi, kamu tidak
+                    perlu khawatir. Prosesnya pun sangat mudah dan tidak ribet. Hanya dengan beberapa langkah sederhana, kode presensi kamu akan langsung tersedia. Dengan demikian, waktu kamu menjadi lebih efektif untuk hal-hal yang lebih penting.
                 </p>
 
-                <h4>Keunggulan Website Ini</h4>
+                <h4>Keunggulan Lumina</h4>
                 <p>
-                    Keunggulan website ini jelas banget, yaitu bisa kasih solusi instan kalau kamu lupa presensi. Dengan generator kode presensi otomatis, kamu bisa hindari masalah atau sanksi yang nggak diinginkan karena telat atau lupa presensi. Selain
-                    itu, website ini juga bisa diakses <strong>kapanpun dan di manapun,</strong> mau lewat laptop atau HP, tetap bisa! Proses enkripsinya juga aman banget, jadi kamu bisa pakai kodenya tanpa khawatir.
+                    Keunggulan Lumina sangat jelas: memberikan solusi instan untuk masalah lupa presensi. Dengan generator kode presensi otomatis, kamu dapat menghindari masalah atau sanksi akibat terlambat atau lupa presensi. Selain itu, Lumina dapat
+                    diakses <strong>kapan saja dan di mana saja</strong>, baik melalui laptop maupun HP! Proses enkripsinya juga aman, sehingga kamu dapat menggunakan kode yang dihasilkan tanpa khawatir.
                 </p>
 
                 <h4>Catatan Penting</h4>
                 <p>
-                    Mungkin ada sedikit kendala teknis, terutama kalau kamu pakai <em>adblocker</em> atau ekstensi browser lainnya. Jadi, buat sementara, <strong><em>adblocker</em>-nya dimatiin dulu ya</strong> biar website-nya bisa berfungsi dengan
-                    lancar. Kami juga terus berusaha buat ningkatin kualitas dan performa website ini biar selalu kasih yang terbaik buat kamu. Kalau ada pertanyaan atau butuh bantuan, jangan sungkan buat hubungi kami ya!
+                    Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan <em>adblocker</em> atau ekstensi browser lainnya. Untuk sementara waktu, <strong>nonaktifkan <em>adblocker</em></strong> agar Lumina dapat berfungsi dengan lancar. Kami
+                    terus berupaya untuk meningkatkan kualitas dan performa Lumina agar selalu memberikan yang terbaik bagi pengguna. Jika ada pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami!
                 </p>
 
-                <h4>Semoga Membantu!</h4>
-                <p>Semoga dengan website ini, masalah lupa presensi bisa lebih mudah teratasi, ya!</p>
+                <h4>Lumina: Sahabat Presensimu</h4>
+                <p>Dengan Lumina, kami berharap masalah lupa presensi dapat teratasi dengan lebih mudah. Selamat menggunakan dan semoga sukses dalam studi kamu!</p>
             """
         },
         {

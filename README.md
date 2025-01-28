@@ -1,6 +1,6 @@
 # Lumina
 
-![Lumina](staticfiles/img/lupa-presensi-2.webp)
+![Lumina](staticfiles/img/lumina-16-9.webp)
 
 ## Sering Ketinggalan Presensi? Santai, Ada Solusinya
 
