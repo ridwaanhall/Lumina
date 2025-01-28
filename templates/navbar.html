@@ -12,6 +12,7 @@
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
         </div>
 
@@ -23,7 +24,10 @@
             
                 <a href="{% url 'blog' %}" class="navbar-item {% if request.resolver_match.url_name == 'blog' or request.resolver_match.url_name == 'blog-detail' %}is-underlined is-italic has-text-weight-bold{% endif %}">
                     Blog
-                </a>                
+                </a>
+                <a href="{% url 'terms' %}" class="navbar-item {% if request.resolver_match.url_name == 'terms' %}is-underlined is-italic has-text-weight-bold{% endif %}">
+                    Ketentuan
+                </a>
             </div>
             <div class="navbar-end">
                 <div class="navbar-item">

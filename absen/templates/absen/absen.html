@@ -22,12 +22,20 @@
                         <p class="is-size-5">Kode Presensi Lama</p>
                         <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" />
                         <input class="input is-primary mb-2" type="number" id="inputpertemuan" placeholder="Pertemuan ke" />
-                        <button class="button is-primary is-dark" onclick="showDecrypted();">
+                        <div class="field">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="termsCheckbox" />
+                                    Saya telah membaca dan menyetujui <a href="{% url 'terms' %}" target="_blank">Ketentuan Lumina</a>.
+                                </label>
+                            </div>
+                        </div>
+                        <button class="button is-primary is-dark" onclick="showDecrypted();" disabled id="submitButton">
                             Buat Presensi Baru
                         </button>
                     </div>
                 </div>
-            </div>
+            </div>            
             <div class="card">
                 <div class="card-content">
                     <div class="content">
@@ -74,5 +82,14 @@
     }
 
     document.getElementById("copyButton").addEventListener("click", copyCode);
+</script>
+
+<script type="text/javascript">
+    const termsCheckbox = document.getElementById("termsCheckbox");
+    const submitButton = document.getElementById("submitButton");
+    
+    termsCheckbox.addEventListener("change", function () {
+        submitButton.disabled = !this.checked;
+    });
 </script>
 {% endblock %}

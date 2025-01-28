@@ -11,40 +11,44 @@ class BlogData:
             }],
             "username": "ridwaanhall",
             "name": "Ridwan Halim",
-            "intro": "Lumina hadir sebagai solusi cerdas untuk mengatasi masalah lupa presensi kuliah!",
+            "intro": "Lumina hadir sebagai solusi cerdas untuk mengatasi masalah lupa belum presensi kuliah!",
             "content": """
                 <p>
-                    <em>Pernahkah kamu merasa panik karena lupa presensi kuliah?</em> Tenang, kamu tidak sendirian! Lumina hadir sebagai solusi untuk kamu yang seringkali terlewat presensi. Kami memahami betul betapa pentingnya presensi dalam perkuliahan
-                    dan tidak ingin hal ini menjadi penghalang. Lumina hadir sebagai solusi praktis yang dirancang agar kamu dapat mengatasi masalah ini dengan mudah, cepat, dan tanpa ribet!
+                    <em>Pernahkah kamu merasa panik karena <strong>lupa belum presensi</strong> kuliah?</em> Tenang, kamu tidak sendirian! <strong>Lumina</strong> hadir sebagai solusi untuk kamu yang seringkali terlewat melakukan presensisi. Kami memahami betul betapa pentingnya presensisi dalam perkuliahan
+                    dan tidak ingin hal ini menjadi penghalang. <strong>Lumina</strong> hadir sebagai solusi praktis yang dirancang agar kamu dapat mengatasi masalah <em>lupa belum presensi</em> dengan mudah, cepat, dan tanpa ribet!
                 </p>
-
-                <h4>Lumina: Generator Kode Presensi Otomatis</h4>
+                
                 <p>
-                    Fitur utama Lumina adalah <strong>generator kode presensi otomatis!</strong> Tidak perlu lagi khawatir jika lupa presensi. Caranya sangat mudah: cukup <em>copy-paste</em> kode presensi lama yang terenkripsi ke kolom yang tersedia, lalu
-                    masukkan nomor pertemuan. Klik tombol "Buat Presensi Baru" dan Lumina akan langsung memproses kode tersebut. Dalam sekejap, kamu akan mendapatkan kode presensi baru yang terenkripsi dan siap digunakan!
-                    <strong>Sangat simpel, bukan?</strong>
+                    Sebagai mahasiswa, kita semua pernah mengalami situasi <strong>lupa belum presensi</strong>. Kami menyadari bahwa <em>LUpa Min IziN Absen</em> adalah masalah umum yang bisa terjadi pada siapa saja, terutama di tengah kesibukan aktivitas perkuliahan.  Oleh karena itu, <strong>Lumina</strong> hadir sebagai pengingat bahwa ketidaksempurnaan manusia seperti <strong>lupa belum presensi</strong>, tidak boleh menjadi penghalang kesuksesan akademik Anda. <strong>Lumina</strong> hadir sebagai solusi atas kelupaan belum presensi.
                 </p>
 
-                <h4>Desain Antarmuka Pengguna yang Intuitif</h4>
+                <h4>Lumina: Generator Kode Presensi Otomatis untuk Mengatasi Lupa Belum Presensi</h4>
                 <p>
-                    Kami menyadari bahwa teknologi seharusnya memudahkan hidup, bukan mempersulit. Oleh karena itu, Lumina dirancang dengan antarmuka yang simpel, bersih, dan mudah dipahami. Bahkan jika kamu tidak terlalu ahli dalam teknologi, kamu tidak
-                    perlu khawatir. Prosesnya pun sangat mudah dan tidak ribet. Hanya dengan beberapa langkah sederhana, kode presensi kamu akan langsung tersedia. Dengan demikian, waktu kamu menjadi lebih efektif untuk hal-hal yang lebih penting.
+                    Fitur utama <strong>Lumina</strong> adalah <strong>generator kode presensi otomatis!</strong> Tidak perlu lagi khawatir jika <strong>lupa belum presensi</strong>. Caranya sangat mudah: cukup <em>copy-paste</em> kode presensi lama yang terenkripsi ke kolom yang tersedia, lalu
+                    masukkan nomor pertemuan. Klik tombol "Buat Presensi Baru" dan <strong>Lumina</strong> akan langsung memproses kode tersebut. Dalam sekejap, kamu akan mendapatkan kode presensi baru yang terenkripsi dan siap digunakan!
+                    <strong>Sangat simpel, bukan?</strong> Ini adalah cara cerdas untuk mengatasi masalah <em>LUpa Min IziN Absen</em>, terutama saat kamu <em>lupa belum presensi</em>.
                 </p>
 
-                <h4>Keunggulan Lumina</h4>
+                <h4>Desain Antarmuka Pengguna yang Intuitif, Memudahkan Saat Lupa Belum Presensi</h4>
                 <p>
-                    Keunggulan Lumina sangat jelas: memberikan solusi instan untuk masalah lupa presensi. Dengan generator kode presensi otomatis, kamu dapat menghindari masalah atau sanksi akibat terlambat atau lupa presensi. Selain itu, Lumina dapat
-                    diakses <strong>kapan saja dan di mana saja</strong>, baik melalui laptop maupun HP! Proses enkripsinya juga aman, sehingga kamu dapat menggunakan kode yang dihasilkan tanpa khawatir.
+                    Kami menyadari bahwa teknologi seharusnya memudahkan hidup, terutama saat kita sedang menghadapi situasi <em>lupa belum presensi</em>. Oleh karena itu, <strong>Lumina</strong> dirancang dengan antarmuka yang simpel, bersih, dan mudah dipahami. Bahkan jika kamu tidak terlalu ahli dalam teknologi, kamu tidak
+                    perlu khawatir. Prosesnya pun sangat mudah dan tidak ribet, bahkan dalam keadaan panik karena <strong>lupa belum presensi</strong>. Hanya dengan beberapa langkah sederhana, kode presensi kamu akan langsung tersedia. Dengan demikian, waktu kamu menjadi lebih efektif untuk hal-hal yang lebih penting, bukan malah terbuang karena khawatir soal <strong>lupa belum presensi</strong>.
                 </p>
 
-                <h4>Catatan Penting</h4>
+                <h4>Keunggulan Lumina: Solusi Cepat dan Tepat untuk Lupa Belum Presensi</h4>
                 <p>
-                    Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan <em>adblocker</em> atau ekstensi browser lainnya. Untuk sementara waktu, <strong>nonaktifkan <em>adblocker</em></strong> agar Lumina dapat berfungsi dengan lancar. Kami
-                    terus berupaya untuk meningkatkan kualitas dan performa Lumina agar selalu memberikan yang terbaik bagi pengguna. Jika ada pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami!
+                    Keunggulan <strong>Lumina</strong> sangat jelas: memberikan solusi instan untuk masalah <strong>lupa belum presensi</strong>. Dengan generator kode presensi otomatis, kamu dapat menghindari masalah atau sanksi akibat terlambat atau <strong>lupa belum presensi</strong>. Selain itu, <strong>Lumina</strong> dapat
+                    diakses <strong>kapan saja dan di mana saja</strong>, baik melalui laptop maupun HP! Proses enkripsinya juga aman, sehingga kamu dapat menggunakan kode yang dihasilkan tanpa khawatir saat menghadapi situasi <strong>lupa belum presensi</strong>.
                 </p>
 
-                <h4>Lumina: Sahabat Presensimu</h4>
-                <p>Dengan Lumina, kami berharap masalah lupa presensi dapat teratasi dengan lebih mudah. Selamat menggunakan dan semoga sukses dalam studi kamu!</p>
+                <h4>Catatan Penting: Agar Tidak Terkendala Saat Lupa Belum Presensi</h4>
+                <p>
+                    Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan <em>adblocker</em> atau ekstensi browser lainnya. Untuk sementara waktu, <strong>nonaktifkan <em>adblocker</em></strong> agar <strong>Lumina</strong> dapat berfungsi dengan lancar, terutama saat kamu sedang panik karena <strong>lupa belum presensi</strong>. Kami
+                    terus berupaya untuk meningkatkan kualitas dan performa <strong>Lumina</strong> agar selalu memberikan yang terbaik bagi pengguna. Jika ada pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami! Kami hadir untuk membantu Anda mengatasi masalah <strong>lupa belum presensi</strong>.
+                </p>
+
+                <h4>Lumina: Sahabat Presensimu, Penyelamat Saat Lupa Belum Presensi</h4>
+                <p>Dengan <strong>Lumina</strong>, kami berharap masalah <strong>lupa belum presensi</strong> dapat teratasi dengan lebih mudah. <em>Ingat, <strong>Lumina</strong> hadir untuk membantu Anda mengatasi <strong>LUpa Min IziN Absen</strong>, terutama ketika kamu <strong>lupa belum presensi</strong>.</em> Selamat menggunakan dan semoga sukses dalam studi kamu! Kami hadir sebagai solusi cerdas saat Anda menghadapi masalah <strong>lupa belum presensi</strong>.</p>
             """
         },
         {
@@ -148,7 +152,7 @@ class BlogData:
                     <div class="column is-full">
                         <div class="box">
                             <h3 class="title is-4"><span class="tag is-primary">2</span> Masukkan Kode Presensi Lama</h3>
-                            <p>Cari bagian "Kode Presensi Lama", lalu <strong>paste kode absenmu</strong> disana. Pastikan kodenya benar ya, jangan sampai salah ketik! 😉</p>
+                            <p>Cari bagian "Kode Presensi Lama", lalu <strong>paste kode presensimu</strong> disana. Pastikan kodenya benar ya, jangan sampai salah ketik! 😉</p>
                             <div class="notification is-info">
                                 <p><strong>Penting!</strong> Pastikan kode presensi lamamu valid agar generator bekerja dengan baik.</p>
                             </div>
@@ -161,6 +165,9 @@ class BlogData:
                             <p>
                                 Selanjutnya, di bawah kolom kode presensi, ada kolom "Pertemuan ke-". Masukkan angka yang sesuai dengan pertemuan yang ingin kamu presensikan, ya. Misal, pertemuan ke-5, ya ketik angka 5.
                             </p>
+                            <div class="notification is-warning">
+                                <p><strong>Penting!</strong> Pastikan kamu menyetujui <a href="{% url 'terms' %}" target="_blank">Ketentuan Lumina</a>.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -193,7 +200,7 @@ class BlogData:
                 </div>
                 <div class="notification is-warning mt-3">
                     <h3 class="title is-5 has-text-centered">Penting! Perhatian untuk AdBlock!</h3>
-                    <p>Jika Lumina tidak bekerja dengan baik, coba <strong>nonaktifkan dulu AdBlock</strong> di browser kamu. Lalu, <em>refresh</em> halaman dan coba lagi. Kami selalu berusaha untuk memberikan pengalaman terbaik untukmu!</p>
+                    <p>Jika <strong>Lumina</strong> tidak bekerja dengan baik, coba <strong>nonaktifkan dulu AdBlock</strong> di browser kamu. Lalu, <em>refresh</em> halaman dan coba lagi. Kami selalu berusaha untuk memberikan pengalaman terbaik untukmu!</p>
                 </div>
 
                 <h3 class="title is-4">💡 Tips Tambahan!</h3>
@@ -224,14 +231,14 @@ class BlogData:
             }],
             "username": "ridwaanhall",
             "name": "Ridwan Halim",
-            "intro": "Mengungkap peran krusial presensi dalam meraih puncak prestasi akademik. Bukan sekadar absensi, tapi investasi untuk masa depanmu.",
+            "intro": "Mengungkap peran krusial presensi dalam meraih puncak prestasi akademik. Bukan sekadar presensisi, tapi investasi untuk masa depanmu.",
             "content": """
                 <p>
                     Mungkin terdengar sepele, bahkan membosankan, tapi jangan salah. Di balik rutinitas pagi yang kadang terasa berat, terdapat sebuah kunci penting yang seringkali kita abaikan: presensi. Ya, kehadiran di kelas, bukan sekadar formalitas
                     belaka, melainkan fondasi kokoh untuk membangun kesuksesan akademik yang gemilang. Mari kita telaah lebih dalam, mengapa presensi begitu krusial dalam perjalanan akademismu.
                 </p>
 
-                <p><strong>Lebih dari Sekadar Catatan Absensi:</strong></p>
+                <p><strong>Lebih dari Sekadar Catatan Presensi:</strong></p>
                 <p>
                     Banyak siswa mungkin menganggap presensi hanya sebatas formalitas yang dicatat oleh guru atau dosen. Namun, pandangan ini sangat keliru. Presensi adalah pintu gerbang menuju berbagai kesempatan yang akan meningkatkan pemahaman dan
                     performa akademikmu. Berikut adalah beberapa alasan mengapa presensi sangat penting:
@@ -250,7 +257,7 @@ class BlogData:
                         meminta bantuan jika mengalami kesulitan.
                     </li>
                     <li>
-                        <strong>Mengikuti Perkembangan Materi:</strong> Mata pelajaran dan perkuliahan seringkali bersifat kumulatif. Artinya, materi hari ini akan berkaitan dengan materi sebelumnya. Jika kamu sering absen, kamu akan kesulitan memahami
+                        <strong>Mengikuti Perkembangan Materi:</strong> Mata pelajaran dan perkuliahan seringkali bersifat kumulatif. Artinya, materi hari ini akan berkaitan dengan materi sebelumnya. Jika kamu sering presensi, kamu akan kesulitan memahami
                         materi selanjutnya dan akan tertinggal jauh.
                     </li>
                     <li>
@@ -262,7 +269,7 @@ class BlogData:
                 <p><strong>Dampak Negatif Ketidakhadiran:</strong></p>
                 <p>Kebalikannya, ketidakhadiran yang sering terjadi dapat membawa dampak negatif yang signifikan terhadap performa akademikmu:</p>
                 <ul>
-                    <li><strong>Ketinggalan Materi:</strong> Ini adalah konsekuensi paling jelas dari sering absen. Semakin sering kamu absen, semakin jauh kamu tertinggal dari teman-temanmu.</li>
+                    <li><strong>Ketinggalan Materi:</strong> Ini adalah konsekuensi paling jelas dari sering presensi. Semakin sering kamu presensi, semakin jauh kamu tertinggal dari teman-temanmu.</li>
                     <li><strong>Kurangnya Pemahaman:</strong> Tanpa penjelasan dan diskusi di kelas, kamu akan kesulitan memahami konsep-konsep yang kompleks.</li>
                     <li><strong>Nilai yang Menurun:</strong> Ketinggalan materi dan kurangnya pemahaman akan berakibat pada nilai yang buruk pada ujian dan tugas.</li>
                     <li><strong>Rasa Tidak Percaya Diri:</strong> Ketika kamu merasa tertinggal dan tidak memahami materi, rasa percaya diri bisa menurun dan memengaruhi motivasimu untuk belajar.</li>
@@ -278,8 +285,8 @@ class BlogData:
                 <ul>
                     <li><strong>Buat Jadwal:</strong> Rencanakan rutinitas harianmu dengan baik, termasuk waktu untuk tidur yang cukup agar tidak terlambat ke sekolah atau kampus.</li>
                     <li><strong>Atur Prioritas:</strong> Sadari bahwa presensi adalah hal yang penting dan prioritaskan untuk selalu hadir di kelas.</li>
-                    <li><strong>Cari Teman Belajar:</strong> Belajar bersama teman dapat meningkatkan motivasi dan membantu kamu saling mengingatkan untuk tidak absen.</li>
-                    <li><strong>Komunikasi dengan Pengajar:</strong> Jika kamu memang terpaksa absen, segera komunikasikan dengan pengajar untuk mendapatkan materi atau tugas yang terlewat.</li>
+                    <li><strong>Cari Teman Belajar:</strong> Belajar bersama teman dapat meningkatkan motivasi dan membantu kamu saling mengingatkan untuk tidak presensi.</li>
+                    <li><strong>Komunikasi dengan Pengajar:</strong> Jika kamu memang terpaksa presensi, segera komunikasikan dengan pengajar untuk mendapatkan materi atau tugas yang terlewat.</li>
                 </ul>
 
                 <p>Dengan memahami betapa pentingnya presensi, semoga kita semua dapat lebih menghargai setiap kesempatan untuk belajar dan bertumbuh di kelas. Jangan biarkan kursi kosong menjadi penghalangmu meraih impian!</p>
