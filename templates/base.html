@@ -1,5 +1,7 @@
-<!DOCTYPE html>
 {% load static %}
+{% load canonical_tags %}
+{% load blog_canonical_tags %}
+<!DOCTYPE html>
 <html lang="id">
     <head>
         <meta charset="utf-8" />
@@ -14,17 +16,16 @@
         <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
 
         <!-- Canonical URL -->
-        <link rel="canonical" href="https://lupa-presensi.vercel.app" />
+        {% canonical_url %}
 
         <!-- Open Graph tags for social sharing -->
         <meta property="og:title" content="Lumina: Generator Kode Presensi Otomatis" />
         <meta property="og:description" content="Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah. Hasilkan kode presensi baru yang siap pakai dalam hitungan detik." />
         <meta property="og:image" content="{% static 'img/lumina-1-91-1.webp' %}" />
-        <meta property="og:url" content="https://lupa-presensi.vercel.app" />
+        <meta property="og:url" content="{% url 'absen-disini' %}" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Lumina" />
         <meta property="og:locale" content="id_ID" />
@@ -33,7 +34,7 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Lumina: Generator Kode Presensi Otomatis" />
         <meta name="twitter:description" content="Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah. Hasilkan kode presensi baru yang siap pakai dalam hitungan detik." />
-        <meta name="twitter:image" content="{% static 'img/lumina-1-91-1.webp' %}" />
+        <meta name="twitter:image:src" content="{% static 'img/lumina-1-91-1.webp' %}" />
 
         <!-- Additional Meta Tags -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -52,7 +53,7 @@
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 "name": "Lumina",
-                "url": "https://lupa-presensi.vercel.app",
+                "url": "{% url 'absen-disini' %}",
                 "description": "Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah.",
                 "image": "{% static 'img/lumina-1-91-1.webp' %}",
                 "publisher": {
