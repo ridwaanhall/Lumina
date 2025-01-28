@@ -36,7 +36,7 @@
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-4">{{ blog.name }}
+                                    <p class="title is-5">{{ blog.name }}
                                     </p>
                                     <p class="subtitle is-6">
                                         <a href="{% url 'ridwaanhall' %}">@{{ blog.username }}
@@ -50,7 +50,7 @@
                                 {% for tag in blog.tags %}
                                     <span class="tag {{ tag.color }}">{{ tag.name }}</span>
                                 {% endfor %}
-                                <h3 class="title is-4 mt-2 mb-2">
+                                <h3 class="title is-5 mt-2 mb-2">
                                     <a href="{% url 'blog' %}{{ blog.title|slugify }}">{{ blog.title }}</a>
                                 </h3>
                                 <p class="mt-1">{{ blog.intro|truncatewords:30 }}</p>

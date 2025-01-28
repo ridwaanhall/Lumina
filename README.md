@@ -1,6 +1,6 @@
-# LUPA PRESENSI
+# Lumina
 
-![LUPA PRESENSI](staticfiles/img/lupa-presensi-2.webp)
+![Lumina](staticfiles/img/lupa-presensi-2.webp)
 
 ## Sering Ketinggalan Presensi? Santai, Ada Solusinya
 
