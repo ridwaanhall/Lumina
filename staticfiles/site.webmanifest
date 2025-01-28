@@ -1,6 +1,6 @@
 {
-    "name": "Presensi UTY Generator",
-    "short_name": "LupaPresensiUTY",
+    "name": "Presensi Generator",
+    "short_name": "LupaPresensi",
     "icons": [
         {
             "src": "/static/icon-16x16.png",
@@ -26,6 +26,6 @@
     "theme_color": "#212121",
     "background_color": "#121212",
     "display": "standalone",
-    "description": "Generator kode presensi otomatis untuk mahasiswa UTY. Atasi masalah lupa presensi dengan cepat dan mudah.",
+    "description": "Generator kode presensi otomatis. Atasi masalah lupa presensi dengan cepat dan mudah.",
     "start_url": "/"
 }
