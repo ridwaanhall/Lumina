@@ -1,140 +1,103 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Ketentuan Lumina | Blog{% endblock %}
+{% block title %}Ketentuan Penggunaan - Lumina{% endblock %}
 
 {% block content %}
 <section class="section">
     <section class="hero is-primary is-bold card">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title has-text-centered">Ketentuan Lumina</h1>
-                <h2 class="subtitle has-text-centered">Berikut adalah Ketentuan Lumina.</h2>
+                <h1 class="title has-text-centered">Pakai Lumina dengan Bijak</h1>
+                <h2 class="subtitle has-text-centered">Aturan Main yang Perlu Kamu Tahu!</h2>
             </div>
         </div>
     </section>
 
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li>
+                <a href="{% url 'lumina-app' %}">Lumina</a>
+            </li>
+            <li class="is-active">
+                <a href="{% url 'terms' %}" aria-current="page">Ketentuan Penggunaan Lumina</a>
+            </li>
+        </ul>
+    </nav>
+
     <section class="section">
         <div class="container">
-            <div class="card mb-3">
-                <div class="card-content">
-                    <div class="content">
-                        <p>
-                            Selamat datang di Lumina ("Kami", "Layanan"). Ketentuan ini ("Ketentuan") mengatur akses dan penggunaan Anda atas aplikasi Lumina. Dengan mengakses atau menggunakan Lumina, Anda setuju untuk terikat oleh
-                            Ketentuan ini. Jika Anda tidak setuju dengan salah satu ketentuan ini, Anda tidak boleh menggunakan aplikasi Lumina.
-                        </p>
-                        <p>
-                            Ketentuan ini adalah perjanjian antara Anda ("Pengguna") dan aplikasi Lumina ("Aplikasi"). Ketentuan ini mengatur penggunaan Anda atas aplikasi Lumina, termasuk fitur-fiturnya.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-header">
-                    <h5 class="card-header-title is-size-5">
-                        Tujuan dan Penggunaan Layanan
-                    </h5>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p>
-                            Lumina dirancang sebagai alat bantu bagi mahasiswa yang mengalami kesulitan dalam melakukan absensi (presensi) karena alasan yang wajar, seperti terburu-buru atau kelupaan. Tujuan utama Lumina adalah untuk
-                            membantu pengguna mengatasi masalah <strong>lupa belum absen</strong> dengan menyediakan solusi yang cepat dan efisien. Lumina <strong>bukanlah</strong> alat untuk memfasilitasi tindakan bolos kuliah atau
-                            menghindari kewajiban absensi secara sengaja.
-                        </p>
-                        <hr />
-                        <h6 class="subtitle is-5"><strong>Ketentuan Penggunaan</strong></h6>
-                        <ol>
-                            <li><strong>Penggunaan yang Diperbolehkan:</strong> Hanya bagi mahasiswa yang mengalami <strong>lupa belum absen</strong> karena alasan yang wajar.</li>
-                            <li>
-                                <strong>Penggunaan yang Dilarang:</strong>
-                                <ul>
-                                    <li>Membolos kuliah atau menghindari kewajiban absensi secara sengaja.</li>
-                                    <li>Melanggar aturan akademik atau kode etik yang berlaku.</li>
-                                    <li>Menggunakan Lumina untuk kegiatan ilegal.</li>
-                                    <li>Mengganggu atau merusak fungsi Aplikasi.</li>
-                                    <li>Menyalahgunakan fitur Aplikasi.</li>
-                                </ul>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-header">
-                    <h5 class="card-header-title is-size-5">
-                        Batasan Tanggung Jawab
-                    </h5>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p>
-                            Aplikasi Lumina disediakan "sebagaimana adanya" tanpa jaminan apa pun. Kami tidak menjamin bahwa aplikasi akan bebas dari kesalahan atau berfungsi tanpa gangguan.
-                        </p>
-                        <ol>
-                            <li><strong>Disclaimer Garansi:</strong> Kami tidak memberikan jaminan apapun atas Aplikasi.</li>
-                            <li><strong>Batasan Tanggung Jawab:</strong> Kami tidak bertanggung jawab atas kerugian apa pun yang timbul dari penggunaan atau ketidakmampuan Anda untuk menggunakan Aplikasi.</li>
-                            <li><strong>Tidak Bertanggung Jawab atas Penyalahgunaan:</strong> Kami tidak bertanggung jawab atas konsekuensi yang timbul akibat penyalahgunaan aplikasi, termasuk namun tidak terbatas pada sanksi akademik.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-header">
-                    <h5 class="card-header-title is-size-5">
-                        Ketentuan Tambahan
-                    </h5>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p>
-                            Kami berhak untuk mengubah Ketentuan ini dari waktu ke waktu. Perubahan akan diumumkan di halaman "Ketentuan Lumina" dan berlaku sejak tanggal publikasi. Dengan terus menggunakan aplikasi Lumina
-                            setelah perubahan tersebut, Anda dianggap telah menyetujui Ketentuan yang telah diubah.
-                        </p>
-                        <p>
-                            Kami berhak untuk menghentikan atau menangguhkan akses Anda ke Aplikasi jika kami menemukan adanya pelanggaran terhadap Ketentuan ini atau jika kami memiliki alasan yang sah.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-header">
-                    <h5 class="card-header-title is-size-5">
-                        Hubungi Kami
-                    </h5>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <p>
-                            Jika Anda memiliki pertanyaan atau keluhan mengenai Ketentuan ini, Anda dapat menghubungi kami melalui:
-                        </p>
-                        <ul>
-                            <li><strong>Email:</strong> ridwaanhall.dev@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
             <div class="card">
                 <div class="card-content">
                     <div class="content">
+                        <strong>Yo, Warga Lumina!</strong> 👋
                         <p>
-                            Ketentuan ini merupakan keseluruhan perjanjian antara Anda dan aplikasi Lumina terkait penggunaan aplikasi Lumina dan menggantikan semua perjanjian dan pemahaman sebelumnya.
+                            Sebelum kamu gaspol pakai Lumina, ada aturan main yang perlu kamu pahami. Ini bukan basa-basi, tapi <em>rules</em> yang bikin kita semua nyaman dan makin semangat belajar. Kita sebut aja ini "Ketentuan Lumina". Dengan lanjut menggunakan Lumina, berarti kamu sudah sepakat sama aturan ini. Kalau ada yang nggak sreg, mending jangan pakai Lumina dulu, ya.
                         </p>
+                        
+                        <strong>Lumina = Kamu + Aplikasi Keren Ini</strong>
                         <p>
-                            Ketentuan ini berlaku sejak hari Ahad, 26 Januari 2025.
+                            Ketentuan ini adalah perjanjian sakral antara kamu (para "Pengguna" setia) dan Lumina (si "Aplikasi" andalan). Kita atur di sini semua tentang bagaimana kamu bisa menggunakan Lumina dengan bijak, jadi simak baik-baik ya!
                         </p>
+                        
+                        <strong>Misi Mulia Lumina: Bukan untuk Bolos! 🚀</strong>
                         <p>
-                            Kami tegaskan kembali bahwa Lumina dibuat semata-mata untuk membantu mahasiswa yang <strong>benar-benar lupa belum melakukan absensi</strong>. Menggunakan Aplikasi untuk tujuan lain, termasuk membolos kuliah,
-                            adalah pelanggaran terhadap Ketentuan ini.
+                            Lumina hadir untuk jadi pahlawan bagi kamu yang <em>sometimes</em> lupa presensi karena buru-buru atau memang lagi <em>blank</em>. Tujuan utama Lumina itu jelas: bantu kamu mengatasi masalah lupa presensi dengan <em>sat-set</em>.
                         </p>
+                        
+                        <strong>Ingat!</strong> Lumina <strong>bukan</strong> alat untuk membolos kuliah atau menghindari kewajiban presensi. Lumina itu <em>partner</em>, bukan <em>partner in crime</em>.
+                        
+                        <strong>Aturan Main yang Wajib Kamu Patuhi:</strong>
+                        <ul>
+                            <li><strong>Boleh:</strong> Lumina boleh kamu pakai kalau kamu memang lupa presensi karena alasan yang wajar. Kita semua manusia, kok.</li>
+                            <li><strong>Gak Boleh! (Alias, Dilarang Keras):</strong>
+                                <ul>
+                                    <li><strong>Bolos Kuliah:</strong> Lumina bukan alasan untuk nggak masuk kelas.</li>
+                                    <li><strong>Melanggar Aturan Kampus:</strong> Jangan sampai Lumina bikin kamu kena masalah sama peraturan akademik atau kode etik kampus.</li>
+                                    <li><strong>Kegiatan Ilegal:</strong> Lumina bukan aplikasi untuk main-main sama hal yang melanggar hukum.</li>
+                                    <li><strong>Ngerusak Aplikasi:</strong> Jangan coba-coba nge-hack atau bikin Lumina error, ya.</li>
+                                    <li><strong>Nyalahgunain Fitur:</strong> Pakai fitur Lumina sesuai fungsinya, jangan aneh-aneh.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <strong>Penting Dibaca: Tanggung Jawab Lumina (dan Bukan Tanggung Jawabnya)</strong>
+                        <ul>
+                            <li><strong>No Guarantee:</strong> Kami nggak menjamin apa pun tentang kinerja aplikasi ini. Jadi, kalau ada error, mohon dimaklumi.</li>
+                            <li><strong>No Blame:</strong> Kami nggak bertanggung jawab atas kerugian apa pun yang timbul karena kamu pakai (atau nggak bisa pakai) Lumina.</li>
+                            <li><strong>No Excuse for Misuse:</strong> Kalau kamu nyalahgunain Lumina dan kena sanksi akademik, itu bukan salah Lumina ya. Intinya, gunakan Lumina dengan bijak.</li>
+                        </ul>
+                        
+                        <strong>Yang Perlu Kamu Tahu:</strong>
+                        <ul>
+                            <li><strong>Aturan Bisa Berubah:</strong> Ketentuan ini bisa berubah sewaktu-waktu. Perubahan akan diumumkan di halaman "Ketentuan Lumina". Kalau kamu terus pakai Lumina setelah ada perubahan, berarti kamu setuju dengan aturan yang baru.</li>
+                            <li><strong>Akses Bisa Diblokir:</strong> Kalau kamu melanggar aturan atau ada alasan yang kuat, kami berhak menangguhkan akses kamu ke Lumina.</li>
+                            <li><strong>Ada Pertanyaan?</strong> Kalau kamu punya pertanyaan atau keluhan soal ketentuan ini, jangan sungkan hubungi kami:
+                                <ul>
+                                    <li><strong>Email:</strong> ridwaanhall.dev@gmail.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <strong>Intinya:</strong>
+                        <p>
+                            Ketentuan ini adalah perjanjian lengkap antara kamu dan Lumina. Ini menggantikan semua perjanjian atau pemahaman kita sebelumnya.
+                        </p>
+                        
+                        <strong>Mulai Berlaku:</strong>
+                        <p>
+                            Ketentuan ini resmi berlaku sejak <strong>hari Ahad, 26 Januari 2025.</strong>
+                        </p>
+                        
+                        <strong>Last but not least:</strong>
+                        <p>
+                            Lumina dibuat <em>purely</em> untuk membantu kamu yang beneran lupa presensi. Memakai Lumina untuk hal lain, apalagi bolos kuliah, itu sama aja kamu melanggar aturan kita. So, be smart and use Lumina wisely! 😎
+                        </p>
+                        
+                        <strong>Semangat kuliah dan jangan lupa presensi ya! 😉</strong>
                     </div>
                 </div>
-            </div>
+            </div>            
         </div>
     </section>
 </section>
