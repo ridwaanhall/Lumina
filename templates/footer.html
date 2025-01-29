@@ -1,39 +1,35 @@
 <footer class="footer">
     <div class="container">
         <div class="content">
-            <div class="level">
-                <div class="level-left">
-                    <div class="level-item">
-                        <p>&copy; {% now "Y" %} Lumina</p>
-                    </div>
-                    <div class="level-item">
-                        <a href="{% url 'terms' %}" class="has-text-grey">Ketentuan</a>
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-12-mobile is-6-tablet">
+                    <p class="has-text-grey">© {% now "Y" %} Lumina</p>
+                    <div class="is-inline-flex mt-2">
+                      <a href="{% url 'terms' %}" class="has-text-grey mr-4 {% if request.resolver_match.url_name == 'terms' %}is-underlined is-italic{% endif %}">Ketentuan</a>
+                      <a href="{% url 'about' %}" class="has-text-grey {% if request.resolver_match.url_name == 'about' %}is-underlined is-italic{% endif %}">Tentang</a>
                     </div>
                 </div>
-
-                <div class="level-right">
-                    <div class="level-item">
-                        <div class="buttons are-small are-ghost">
-                            <a href="{% url 'ridwaanhall' %}" class="button">
-                                <span class="icon-text">
-                                    <span class="icon">
-                                        <i class="fas fa-user"></i>
-                                    </span>
-                                    <span>Created by ridwaanhall</span>
+                <div class="column is-12-mobile is-6-tablet has-text-right-tablet">
+                    <div class="buttons are-small are-ghost is-right">
+                        <a href="{% url 'ridwaanhall' %}" class="button">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-user"></i>
                                 </span>
-                            </a>
-                            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="button">
-                                <span class="icon-text">
-                                    <span class="icon">
-                                        <i class="fas fa-balance-scale"></i>
-                                    </span>
-                                    <span>CC BY-NC-ND 4.0</span>
+                                <span>Created by ridwaanhall</span>
+                            </span>
+                        </a>
+                        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="button">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-balance-scale"></i>
                                 </span>
-                            </a>
-                            <a class="button" href="https://github.com/ridwaanhall/Lumina">
-                                <img src="https://wakatime.com/badge/user/018b799e-de53-4f7a-bb65-edc2df9f26d8/project/7a7430e8-b733-4b37-938d-1034ca1bead6.svg" alt="wakatime">
-                            </a>
-                        </div>
+                                <span>CC BY-NC-ND 4.0</span>
+                            </span>
+                        </a>
+                        <a class="button" href="https://github.com/ridwaanhall/Lumina">
+                            <img src="https://wakatime.com/badge/user/018b799e-de53-4f7a-bb65-edc2df9f26d8/project/7a7430e8-b733-4b37-938d-1034ca1bead6.svg" alt="wakatime">
+                        </a>
                     </div>
                 </div>
             </div>
