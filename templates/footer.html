@@ -3,10 +3,10 @@
         <div class="content">
             <div class="columns is-vcentered is-multiline">
                 <div class="column is-12-mobile is-6-tablet">
-                    <p class="has-text-grey">© {% now "Y" %} Lumina</p>
+                    <p>© {% now "Y" %} Lumina</p>
                     <div class="is-inline-flex mt-2">
-                      <a href="{% url 'terms' %}" class="has-text-grey mr-4 {% if request.resolver_match.url_name == 'terms' %}is-underlined is-italic{% endif %}">Ketentuan</a>
-                      <a href="{% url 'about' %}" class="has-text-grey {% if request.resolver_match.url_name == 'about' %}is-underlined is-italic{% endif %}">Tentang</a>
+                      <a href="{% url 'terms' %}" class="mr-4 {% if request.resolver_match.url_name == 'terms' %}is-underlined is-italic{% endif %}">Ketentuan</a>
+                      <a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}is-underlined is-italic{% endif %}">Tentang</a>
                     </div>
                 </div>
                 <div class="column is-12-mobile is-6-tablet has-text-right-tablet">
