@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Daftar Blog | Blog{% endblock %}
+{% block title %}Lumina Blog{% endblock %}
 
 {% block content %}
 <section class="section">
@@ -13,6 +13,17 @@
             </div>
         </div>
     </section>
+
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li>
+                <a href="{% url 'lumina-app' %}">Lumina</a>
+            </li>
+            <li class="is-active">
+                <a href="{% url 'blog' %}" aria-current="page">Blog</a>
+            </li>
+        </ul>
+    </nav>
 
     <section class="section">
         <div class="container">
@@ -59,7 +70,7 @@
                         <footer class="card-footer">
                             <p class="card-footer-item">
                                 <span>
-                                    <time datetime="{{ blog.date }}">{{ blog.date }}</time>
+                                    <time datetime="{{ blog.date }}">{{ blog.date|date:"l, j F Y, H.i T" }}</time>
                                 </span>
                             </p>
                         </footer>
