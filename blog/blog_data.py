@@ -1,5 +1,5 @@
 from datetime import datetime
-from django.utils import timezone
+
 
 class BlogData:
     blogs = [
