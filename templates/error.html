@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Halaman Error - Lumina{% endblock %}
+
+{% block content %}
+
+    {% if error_code == 400 %}
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <div class="content has-text-centered">
+                            <h1 class="title is-1">400</h1>
+                            <h2 class="subtitle is-4">Oops, Kayaknya Ada yang Salah Nih!</h2>
+                            <p>Request kamu kayaknya kurang jelas, coba dicek lagi ya. Mungkin URL-nya typo atau ada data yang kurang lengkap. Santai, kita semua pernah kok.</p>
+                            <a href="/" class="button is-primary">Balik Lagi ke Beranda</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% elif error_code == 401 %}
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                         <div class="content has-text-centered">
+                            <h1 class="title is-1">401</h1>
+                            <h2 class="subtitle is-4">Eh, Kayaknya Kamu Belum Login Deh</h2>
+                            <p>Halaman ini eksklusif banget nih, cuma buat yang udah login aja. Yuk, login dulu biar bisa lanjut. Jangan lupa, username dan password-nya ya!</p>
+                            <a href="{% url 'login' %}" class="button is-primary">Yuk, Login Dulu!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% elif error_code == 403 %}
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <div class="content has-text-centered">
+                            <h1 class="title is-1">403</h1>
+                            <h2 class="subtitle is-4">Akses Ditolak!</h2>
+                            <p>Maaf, kayaknya kamu gak punya akses ke sini deh. Halaman ini bukan buat kamu, mungkin kamu salah alamat atau perlu izin khusus. Coba cek lagi ya.</p>
+                            <a href="/" class="button is-primary">Balik Aja Deh</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     {% elif error_code == 404 %}
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <div class="content has-text-centered">
+                            <h1 class="title is-1">404</h1>
+                            <h2 class="subtitle is-4">Halaman yang Kamu Cari Lagi Gak Ada Nih!</h2>
+                            <p>Wah, kayaknya halaman yang kamu cari udah ngilang entah kemana. Mungkin udah pindah atau emang belum dibikin. Coba cari yang lain ya, jangan nyerah!</p>
+                             <a href="/" class="button is-primary">Cari Halaman Lain</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% elif error_code == 500 %}
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                       <div class="content has-text-centered">
+                            <h1 class="title is-1">500</h1>
+                            <h2 class="subtitle is-4">Servernya Lagi Galau Nih!</h2>
+                            <p>Duh, server kita lagi ada masalah internal nih. Maaf ya, jadi bikin kamu gak nyaman. Kita lagi usaha buat benerin secepatnya. Coba lagi nanti ya, atau mungkin sambil ngopi dulu.</p>
+                            <a href="/" class="button is-primary">Refresh Aja Deh</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     {% else %}
+         <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                       <div class="content has-text-centered">
+                            <h1 class="title is-1">Ups!</h1>
+                            <h2 class="subtitle is-4">Ada yang gak beres</h2>
+                            <p>Sepertinya terjadi kesalahan yang tidak terduga, mohon coba kembali.</p>
+                             <a href="/" class="button is-primary">Kembali ke Beranda</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endif %}
+{% endblock %}
+
+{% block script %}
+{% endblock %}
