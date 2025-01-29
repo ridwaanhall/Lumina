@@ -1,10 +1,13 @@
+from datetime import datetime
+from django.utils import timezone
+
 class BlogData:
     blogs = [
         {
             "title": "Lumina: Jangan Biarkan Lupa Presensi Menghambatmu!",
             "thumbnail": "/img/lumina.webp",
             "image": "/img/lumina-16-9.webp",
-            "date": "2025-01-27T08:30:00+07:00",
+            "date": datetime.fromisoformat("2025-01-27T08:30:00+07:00"),
             "tags": [{
                 "name": "Tips & Trick",
                 "color": "is-primary"
@@ -43,7 +46,7 @@ class BlogData:
 
                 <h4>Catatan Penting: Agar Tidak Terkendala Saat Lupa Belum Presensi</h4>
                 <p>
-                    Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan <em>adblocker</em> atau ekstensi browser lainnya. Untuk sementara waktu, <strong>nonaktifkan <em>adblocker</em></strong> agar <strong>Lumina</strong> dapat berfungsi dengan lancar, terutama saat kamu sedang panik karena <strong>lupa belum presensi</strong>. Kami
+                    Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan <em>AdBlocker</em> atau ekstensi browser lainnya. Untuk sementara waktu, <strong>nonaktifkan <em>AdBlocker</em></strong> agar <strong>Lumina</strong> dapat berfungsi dengan lancar, terutama saat kamu sedang panik karena <strong>lupa belum presensi</strong>. Kami
                     terus berupaya untuk meningkatkan kualitas dan performa <strong>Lumina</strong> agar selalu memberikan yang terbaik bagi pengguna. Jika ada pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi kami! Kami hadir untuk membantu Anda mengatasi masalah <strong>lupa belum presensi</strong>.
                 </p>
 
@@ -55,7 +58,7 @@ class BlogData:
             "title": "Lupa Presensi? No More! Ini Dia Tips Ampuhnya!",
             "thumbnail": "/img/tips-presensi.webp",
             "image": "/img/tips-presensi-16-9.webp",
-            "date": "2025-01-27T09:32:00+07:00",
+            "date": datetime.fromisoformat("2025-01-27T09:32:00+07:00"),
             "tags": [{
                 "name": "Tips & Trick",
                 "color": "is-primary"
@@ -117,7 +120,7 @@ class BlogData:
             "title": "Cara Menggunakan Lumina",
             "thumbnail": "/img/cara-presensi.webp",
             "image": "/img/cara-presensi-16-9.webp",
-            "date": "2025-01-27T10:09:00+07:00",
+            "date": datetime.fromisoformat("2025-01-27T10:09:00+07:00"),
             "tags": [
                 {
                     "name": "Tips & Trick",
@@ -166,7 +169,7 @@ class BlogData:
                                 Selanjutnya, di bawah kolom kode presensi, ada kolom "Pertemuan ke-". Masukkan angka yang sesuai dengan pertemuan yang ingin kamu presensikan, ya. Misal, pertemuan ke-5, ya ketik angka 5.
                             </p>
                             <div class="notification is-warning">
-                                <p><strong>Penting!</strong> Pastikan kamu menyetujui <a href="{% url 'terms' %}" target="_blank">Ketentuan Lumina</a>.</p>
+                                <p><strong>Penting!</strong> Pastikan kamu menyetujui <a href="/terms" target="_blank">Ketentuan Lumina</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -220,7 +223,7 @@ class BlogData:
             "title": "Mengapa Kehadiran di Kelas Merupakan Investasi Terbaik untuk Masa Depan Akademikmu",
             "thumbnail": "/img/presensi-penting.webp",
             "image": "/img/presensi-penting-16-9.webp",
-            "date": "2025-01-28T15:07:00+07:00",
+            "date": datetime.fromisoformat("2025-01-28T15:07:00+07:00"),
             "tags": [{
                 "name": "Pendidikan",
                 "color": "is-success" 
