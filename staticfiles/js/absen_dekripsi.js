@@ -70,5 +70,5 @@ function showDecrypted() {
 
     timeoutId = setTimeout(function () {
         secondCard.style.display = "none";
-    }, 5000);
+    }, 3000);
 }
