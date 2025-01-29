@@ -28,9 +28,12 @@ function formatDayDate(date) {
 }
 
 function showDecrypted() {
-    var mau_bolos = document.getElementById('inputcodeabsen').value;
+    var secondCard = document.getElementById("secondCard");
+    secondCard.style.display = "block";
+
+    var inputcodeabsen = document.getElementById('inputcodeabsen').value;
     try {
-        var decrypted = CryptoJS.AES.decrypt(mau_bolos, biar_jelas);
+        var decrypted = CryptoJS.AES.decrypt(inputcodeabsen, biar_jelas);
         var decrypted_2 = decrypted.toString(CryptoJS.enc.Utf8);
         var parts = decrypted_2.split(',');
         var idMatkul = parts[0];
@@ -60,4 +63,12 @@ function showDecrypted() {
         document.getElementById('kode_baru_enc').value = "";
         document.getElementById('description_valid').innerHTML = "Kode tidak valid.";
     }
+    
+    let timeoutId;
+
+    clearTimeout(timeoutId);
+
+    timeoutId = setTimeout(function () {
+        secondCard.style.display = "none";
+    }, 5000);
 }

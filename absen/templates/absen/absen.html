@@ -6,7 +6,14 @@
 
 {% block content %}
 
-<div class="container section">
+<section class="section">
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li class="is-active">
+                <a href="{% url 'lumina-app' %}" aria-current="page">Lumina</a>
+            </li>
+        </ul>
+    </nav>
     <div class="columns is-centered">
         <div class="column is-6">
             <div class="notification is-primary">
@@ -14,7 +21,7 @@
                 <strong>Kunjungi <a href="{% url 'blog' %}" class="has-text-link"> blog</a> untuk selengkapnya!</strong>
             </div>
             <div class="notification is-danger has-text-centered" id="description_valid">
-                Kalo presensinya gabisa, nonaktifin dulu ADBlock-nya
+                Kalo presensinya gabisa, nonaktifin dulu AdBlock-nya
             </div>
             <div class="card">
                 <div class="card-content">
@@ -30,29 +37,39 @@
                                 </label>
                             </div>
                         </div>
-                        <button class="button is-primary is-dark" onclick="showDecrypted();" disabled id="submitButton">
-                            Buat Presensi Baru
-                        </button>
+                        <div class="field is-grouped is-grouped-right">
+                            <div class="control">
+                                <button class="button is-primary is-dark" onclick="showDecrypted();" disabled id="submitButton">
+                                    Buat Presensi Baru
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>            
-            <div class="card">
+            <div class="card" id="secondCard" style="display: none;">
                 <div class="card-content">
                     <div class="content">
                         <p class="is-size-5">Kode Presensi dan QR Code Baru</p>
                         <input class="input is-link mb-2" type="text" id="kode_baru_enc" placeholder="Presensi Baru Muncul Disini" />
-                        <button id="copyButton" class="button is-link is-dark">
-                            Salin
-                        </button>
-                        <a id="generateQRButton" class="button is-link is-dark">
-                            QR Code
-                        </a>
+                        <div class="field is-grouped is-grouped-right">
+                            <div class="control">
+                                <button id="copyButton" class="button is-link is-dark">
+                                    Salin
+                                </button>
+                            </div>
+                            <div class="control">
+                                <a id="generateQRButton" class="button is-link is-dark">
+                                    QR Code
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>                       
         </div>
     </div>
-</div>
+</section>
 {% endblock %}
 
 {% block script %}
