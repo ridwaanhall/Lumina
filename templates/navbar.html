@@ -2,7 +2,7 @@
 <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item" href="{% url 'absen-disini' %}">
+            <a class="navbar-item" href="{% url 'lumina-app' %}">
                 <img src="{% static 'icon-32x32.png' %}" alt="Kucing Legend" width="28" height="28" />
                 <strong class="ml-2">Lumina</strong>
             </a>
@@ -18,7 +18,7 @@
 
         <div class="navbar-menu" id="navbarMenu">
             <div class="navbar-start">
-                <a href="{% url 'absen-disini' %}" class="navbar-item {% if request.resolver_match.url_name == 'absen-disini' %}is-underlined is-italic has-text-weight-bold{% endif %}">
+                <a href="{% url 'lumina-app' %}" class="navbar-item {% if request.resolver_match.url_name == 'lumina-app' %}is-underlined is-italic has-text-weight-bold{% endif %}">
                     Home
                 </a>
             
@@ -31,7 +31,7 @@
             </div>
             <div class="navbar-end">
                 <div class="navbar-item">
-                    <div class="buttons">
+                    <div class="buttons are-small">
                         <!-- Desktop View -->
                         <div class="is-hidden-mobile">
                             <a class="button is-link" href="{% url 'lanpage' %}">
