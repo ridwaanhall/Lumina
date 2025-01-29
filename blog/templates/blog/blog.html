@@ -5,11 +5,11 @@
 
 {% block content %}
 <section class="section">
-    <section class="hero is-primary is-bold card">
+    <section class="hero is-bold card">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">Daftar Blog</h1>
-                <h2 class="subtitle">Berikut adalah daftar artikel blog yang tersedia.</h2>
+                <h1 class="title">Yuk, <em>explore</em> Lumina Blog! ✨</h1>
+                <h2 class="subtitle">Scroll ke bawah buat baca artikelnya ya! 👇</h2>
             </div>
         </div>
     </section>
@@ -59,7 +59,7 @@
                     
                             <div class="content">
                                 {% for tag in blog.tags %}
-                                    <span class="tag {{ tag.color }}">{{ tag.name }}</span>
+                                    <span class="tag">{{ tag.name }}</span>
                                 {% endfor %}
                                 <h3 class="title is-5 mt-2 mb-2">
                                     <a href="{% url 'blog' %}{{ blog.title|slugify }}">{{ blog.title }}</a>
