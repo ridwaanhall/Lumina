@@ -16,18 +16,35 @@
     </nav>
     <div class="columns is-centered">
         <div class="column is-6">
-            <div class="notification is-primary">
-                Gak ngerti cara makenya? <em>cusss</em> ke <a href="{% url 'blog' %}" class="has-text-link"> Lumina Blog</a> aja ya!</strong>
-            </div>
-            <div class="notification is-danger has-text-centered" id="description_valid">
-                Eh, kalo lagi error pas presensi, coba matiin dulu AdBlock-nya ya, <em>bestie</em>!
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <div class="has-text-centered">
+                            Error? Gak ngerti cara makenya? <em>cusss</em> ke <a href="{% url 'blog' %}" class="has-text-link"> Lumina Blog</a> aja ya!</strong>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card">
                 <div class="card-content">
                     <div class="content">
                         <p class="is-size-5">Kode Presensi Lama</p>
-                        <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Tempel kode presensi kamu di sini ya!" />
-                        <input class="input is-primary mb-2" type="number" id="inputpertemuan" placeholder="Pertemuan Keberapa, nih?" />
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="password" id="inputcodeabsen" placeholder="Tempel kode presensi kamu di sini ya!" />
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="number" id="inputpertemuan" placeholder="Pertemuan Keberapa, nih?" />
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-arrow-up-9-1"></i>
+                                </span>
+                            </p>
+                        </div>
                         <div class="field">
                             <div class="control">
                                 <label class="checkbox">
@@ -38,7 +55,7 @@
                         </div>
                         <div class="field is-grouped is-grouped-right">
                             <div class="control">
-                                <button class="button is-info is-inverted" onclick="showDecrypted();" disabled id="submitButton">
+                                <button class="button is-link is-outlined" onclick="showDecrypted();" disabled id="submitButton">
                                     <span class="icon">
                                         <i class="fa-solid fa-gears"></i>
                                     </span>
@@ -48,29 +65,49 @@
                         </div>
                     </div>
                 </div>
-            </div>            
-            <div class="card" id="secondCard" style="display: none;">
-                <div class="card-content">
-                    <div class="content">
-                        <p class="is-size-5"><em>Nih</em>, Kode Presensi & QR Code Baru Kamu!</p>
-                        <input class="input is-link mb-2" type="text" id="kode_baru_enc" placeholder="Presensi Barunya Udah Nongol Di Sini, ya!" />
-                        <div class="field is-grouped is-grouped-right">
-                            <button id="copyButton" class="button is-link is-outlined">
-                                <span class="icon">
-                                    <i class="fa-solid fa-copy"></i>
-                                </span>
-                                <span>Salin</span>
-                            </button>
-                            <a id="generateQRButton" class="button is-danger is-outlined">
-                                <span class="icon">
-                                    <i class="fa-solid fa-qrcode"></i>
-                                </span>
-                                <span>QR Code</span>
-                            </a>
+            </div>
+            <div id="secondCard" style="display: none;">
+                <article class="message card is-small is-danger mb-2">
+                    <div class="message-body">
+                        <div class="has-text-centered">
+                            <span class="icon is-small">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                            <span id="description_valid">
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <div class="card mt-2">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="is-size-5"><em>Nih</em>, Kode Presensi & QR Code Baru Kamu!</p>
+                            <div class="field">
+                                <p class="control has-icons-left">
+                                    <input class="input" type="text" id="kode_baru_enc" placeholder="Presensi Barunya Udah Nongol Di Sini, ya!" />
+                                    <span class="icon is-small is-left">
+                                        <i class="fa-regular fa-comment-dots"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field is-grouped is-grouped-right">
+                                <button id="copyButton" class="button is-link is-outlined">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-copy"></i>
+                                    </span>
+                                    <span>Salin</span>
+                                </button>
+                                <a id="generateQRButton" class="button">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-qrcode"></i>
+                                    </span>
+                                    <span>QR Code</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>                       
+            </div> 
         </div>
     </div>
 </section>
@@ -106,11 +143,23 @@
 </script>
 
 <script type="text/javascript">
+    const inputcodeabsen = document.getElementById("inputcodeabsen");
+    const inputpertemuan = document.getElementById("inputpertemuan");
     const termsCheckbox = document.getElementById("termsCheckbox");
     const submitButton = document.getElementById("submitButton");
-    
-    termsCheckbox.addEventListener("change", function () {
-        submitButton.disabled = !this.checked;
-    });
+
+    function validateForm() {
+        submitButton.disabled = !(
+            inputcodeabsen.value.trim() !== "" &&
+            inputpertemuan.value.trim() !== "" &&
+            termsCheckbox.checked
+        );
+    }
+
+    inputcodeabsen.addEventListener("input", validateForm);
+    inputpertemuan.addEventListener("input", validateForm);
+    termsCheckbox.addEventListener("change", validateForm);
+
+    validateForm();
 </script>
 {% endblock %}

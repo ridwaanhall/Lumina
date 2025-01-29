@@ -50,7 +50,7 @@ function showDecrypted() {
         var kode_baru = idMatkul + ',' + pertemuan + ',' + date + ',' + startTime + ',' + endTime;
         var kode_baru_enc = CryptoJS.AES.encrypt(kode_baru, biar_jelas);
 
-        var DescrptionValid = 'Kode ini berlaku dari jam ' + startTime + ' hingga ' + endTime + ' di hari ' + day_date + '.';
+        var DescrptionValid = 'Kode aktif: ' + startTime + ' - ' + endTime + ', ' + day_date + '.';
         var encryptedText = kode_baru_enc.toString();
 
         document.getElementById('kode_baru_enc').value = kode_baru_enc;
@@ -65,7 +65,6 @@ function showDecrypted() {
     }
     
     let timeoutId;
-
     clearTimeout(timeoutId);
 
     timeoutId = setTimeout(function () {
