@@ -33,7 +33,7 @@ Kami menyadari bahwa teknologi seharusnya memudahkan hidup, terutama saat kita s
 
 ## ⚠️ Catatan Penting
 
-Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan adblocker atau ekstensi browser lainnya. Untuk sementara waktu, **nonaktifkan adblocker** agar Lumina dapat berfungsi dengan lancar, terutama saat kamu sedang panik karena lupa belum presensi. Kami terus berupaya untuk meningkatkan kualitas dan performa Lumina agar selalu memberikan yang terbaik bagi pengguna.
+Mungkin ada sedikit kendala teknis, terutama jika kamu menggunakan AdBlocker atau ekstensi browser lainnya. Untuk sementara waktu, **nonaktifkan AdBlocker** agar Lumina dapat berfungsi dengan lancar, terutama saat kamu sedang panik karena lupa belum presensi. Kami terus berupaya untuk meningkatkan kualitas dan performa Lumina agar selalu memberikan yang terbaik bagi pengguna.
 
 ## 📞 Butuh Bantuan?
 
