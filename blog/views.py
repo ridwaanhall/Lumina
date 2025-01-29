@@ -46,7 +46,7 @@ class BlogDetailView(View):
 
         try:
             if not isinstance(title, str):
-                 raise SuspiciousOperation("Invalid title format")
+                raise SuspiciousOperation("Invalid title format")
             
             blog_post = next((item for item in blogs if slugify(item['title']) == title), None)
             other_blogs = [item for item in blogs if slugify(item['title']) != title]
@@ -59,15 +59,15 @@ class BlogDetailView(View):
                 return render(request, 'blog/blog_detail.html', context)
             else:
                 context = {
-                   'error_code': 404
-                 }
+                    'error_code': 404
+                }
                 return render(request, 'error.html', context, status=404)
 
         except SuspiciousOperation as e:
-               context = {
-                 'error_code': 400
-               }
-               return render(request, 'error.html', context, status=400)
+            context = {
+                'error_code': 400
+            }
+            return render(request, 'error.html', context, status=400)
         except Exception as e:
             context = {
                 'error_code': 500
