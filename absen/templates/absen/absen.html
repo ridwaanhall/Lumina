@@ -17,30 +17,32 @@
     <div class="columns is-centered">
         <div class="column is-6">
             <div class="notification is-primary">
-                <code>Bingung cara pakenya?</code>
-                <strong>Kunjungi <a href="{% url 'blog' %}" class="has-text-link"> blog</a> untuk selengkapnya!</strong>
+                Gak ngerti cara makenya? <em>cusss</em> ke <a href="{% url 'blog' %}" class="has-text-link"> Lumina Blog</a> aja ya!</strong>
             </div>
             <div class="notification is-danger has-text-centered" id="description_valid">
-                Kalo presensinya gabisa, nonaktifin dulu AdBlock-nya
+                Eh, kalo lagi error pas presensi, coba matiin dulu AdBlock-nya ya, <em>bestie</em>!
             </div>
             <div class="card">
                 <div class="card-content">
                     <div class="content">
                         <p class="is-size-5">Kode Presensi Lama</p>
-                        <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Paste kode absenmu disini" />
-                        <input class="input is-primary mb-2" type="number" id="inputpertemuan" placeholder="Pertemuan ke" />
+                        <input class="input is-primary mb-2" type="text" id="inputcodeabsen" placeholder="Tempel kode presensi kamu di sini ya!" />
+                        <input class="input is-primary mb-2" type="number" id="inputpertemuan" placeholder="Pertemuan Keberapa, nih?" />
                         <div class="field">
                             <div class="control">
                                 <label class="checkbox">
                                     <input type="checkbox" id="termsCheckbox" />
-                                    Saya telah membaca dan menyetujui <a href="{% url 'terms' %}" target="_blank">Ketentuan Lumina</a>.
+                                    Aku udah baca <a href="{% url 'terms' %}" target="_blank">Ketentuan Lumina</a>, dan <em>yes</em>! Aku setuju!
                                 </label>
                             </div>
                         </div>
                         <div class="field is-grouped is-grouped-right">
                             <div class="control">
-                                <button class="button is-primary is-dark" onclick="showDecrypted();" disabled id="submitButton">
-                                    Buat Presensi Baru
+                                <button class="button is-info is-inverted" onclick="showDecrypted();" disabled id="submitButton">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-gears"></i>
+                                    </span>
+                                    <span>Bikin Presensi Baru</span>
                                 </button>
                             </div>
                         </div>
@@ -50,19 +52,21 @@
             <div class="card" id="secondCard" style="display: none;">
                 <div class="card-content">
                     <div class="content">
-                        <p class="is-size-5">Kode Presensi dan QR Code Baru</p>
-                        <input class="input is-link mb-2" type="text" id="kode_baru_enc" placeholder="Presensi Baru Muncul Disini" />
+                        <p class="is-size-5"><em>Nih</em>, Kode Presensi & QR Code Baru Kamu!</p>
+                        <input class="input is-link mb-2" type="text" id="kode_baru_enc" placeholder="Presensi Barunya Udah Nongol Di Sini, ya!" />
                         <div class="field is-grouped is-grouped-right">
-                            <div class="control">
-                                <button id="copyButton" class="button is-link is-dark">
-                                    Salin
-                                </button>
-                            </div>
-                            <div class="control">
-                                <a id="generateQRButton" class="button is-link is-dark">
-                                    QR Code
-                                </a>
-                            </div>
+                            <button id="copyButton" class="button is-link is-outlined">
+                                <span class="icon">
+                                    <i class="fa-solid fa-copy"></i>
+                                </span>
+                                <span>Salin</span>
+                            </button>
+                            <a id="generateQRButton" class="button is-danger is-outlined">
+                                <span class="icon">
+                                    <i class="fa-solid fa-qrcode"></i>
+                                </span>
+                                <span>QR Code</span>
+                            </a>
                         </div>
                     </div>
                 </div>
