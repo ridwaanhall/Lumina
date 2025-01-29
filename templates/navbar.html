@@ -1,5 +1,5 @@
 {% load static %}
-<nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="{% url 'lumina-app' %}">
@@ -31,13 +31,13 @@
                     <div class="buttons are-small">
                         <!-- Desktop View -->
                         <div class="is-hidden-mobile">
-                            <a class="button is-link" href="{% url 'lanpage' %}">
+                            <a class="button" href="{% url 'lanpage' %}">
                                 <span class="icon">
                                     <i class="fa-solid fa-cloud"></i>
                                 </span>
                                 <span>Landing Page</span>
                             </a>
-                            <a class="button is-warning" href="https://saweria.co/ridwaanhall">
+                            <a class="button" href="https://saweria.co/ridwaanhall">
                                 <span class="icon">
                                     <i class="fa-solid fa-sack-dollar"></i>
                                 </span>
@@ -47,13 +47,13 @@
 
                         <!-- Mobile View -->
                         <div class="is-hidden-tablet">
-                            <a class="button is-link is-fullwidth mb-2" href="{% url 'lanpage' %}">
+                            <a class="button is-fullwidth mb-2" href="{% url 'lanpage' %}">
                                 <span class="icon">
                                     <i class="fa-solid fa-cloud"></i>
                                 </span>
                                 <span>Landing Page</span>
                             </a>
-                            <a class="button is-warning is-fullwidth mb-2" href="https://saweria.co/ridwaanhall">
+                            <a class="button is-fullwidth mb-2" href="https://saweria.co/ridwaanhall">
                                 <span class="icon">
                                     <i class="fa-solid fa-sack-dollar"></i>
                                 </span>
