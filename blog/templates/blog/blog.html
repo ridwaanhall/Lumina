@@ -31,10 +31,10 @@
                 {% for blog in blogs %}
                 <div class="column is-half-tablet is-half-desktop is-one-third-widescreen">
                     <div class="card">
-                        {% if blog.thumbnail %}
+                        {% if blog.image %}
                         <div class="card-image">
-                            <figure class="image is-1by1">
-                                <img src="{% static blog.thumbnail %}" alt="{{ blog.title }}" loading="lazy" />
+                            <figure class="image is-16by9">
+                                <img src="{% static blog.image %}" alt="{{ blog.title }}" loading="lazy" height="360" width="640" />
                             </figure>
                         </div>
                         {% endif %}
@@ -43,7 +43,7 @@
                             <div class="media">
                                 <div class="media-left">
                                     <figure class="image is-48x48">
-                                        <img src="{% static 'icon-32x32.png' %}" alt="ridwaanhall second icon" />
+                                        <img src="{% static 'icon-192x192.png' %}" alt="ridwaanhall second icon" width="48" height="48" />
                                     </figure>
                                 </div>
                                 <div class="media-content">
