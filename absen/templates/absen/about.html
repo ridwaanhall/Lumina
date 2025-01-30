@@ -23,34 +23,30 @@
         </ul>
     </nav>
 
-    <section class="section">
-        <div class="container">
-            <div class="card">
-                <div class="card-content">
-                    <div class="content">
-                        {% for section in about_sections %}
-                        {% if section.title %}
-                            <p><strong>{{ section.title|safe }}</strong></p>
-                        {% endif %}
-                        {% if section.content %}
-                            <p>{{ section.content|safe }}</p>
-                        {% endif %}
-                        {% if section.list %}
-                            <ul>
-                                {% for item in section.list %}
-                                    <li>{{ item|safe }}</li>
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                        {% if section.additional_content %}
-                            <p>{{ section.additional_content|safe }}</p>
-                        {% endif %}
+    <div class="card">
+        <div class="card-content">
+            <div class="content">
+                {% for section in about_sections %}
+                {% if section.title %}
+                    <p><strong>{{ section.title|safe }}</strong></p>
+                {% endif %}
+                {% if section.content %}
+                    <p>{{ section.content|safe }}</p>
+                {% endif %}
+                {% if section.list %}
+                    <ul>
+                        {% for item in section.list %}
+                            <li>{{ item|safe }}</li>
                         {% endfor %}
-                    </div>
-                </div>
+                    </ul>
+                {% endif %}
+                {% if section.additional_content %}
+                    <p>{{ section.additional_content|safe }}</p>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
-    </section>
+    </div>
 </section>
 {% endblock %}
 
