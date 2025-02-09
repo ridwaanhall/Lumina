@@ -155,14 +155,16 @@ class EncryptView(View):
                 shift_value = 3
                 decryption_key = caesar_decipher(secret_key, shift_value)
             except Exception as e:
-                return JsonResponse({"status": "error", "message": f"Failed to retrieve decryption key: {str(e)}"}, status=500)
+                logging.error(f"Failed to retrieve decryption key: {str(e)}")
+                return JsonResponse({"status": "error", "message": "Failed to retrieve decryption key."}, status=500)
 
             try:
                 decrypted_text = decrypt_aes_js_style(encrypted_message, decryption_key)
                 if not decrypted_text:
                     raise ValueError("Decryption returned empty result.")
             except Exception as e:
-                return JsonResponse({"status": "error", "message": f"Decryption failed: {str(e)}"}, status=400)
+                logging.error(f"Decryption failed: {str(e)}")
+                return JsonResponse({"status": "error", "message": "Decryption failed."}, status=400)
 
             try:
                 course_id, _, _, _, _ = decrypted_text.split(',')
@@ -181,7 +183,8 @@ class EncryptView(View):
                 if not new_encrypted_message:
                     raise ValueError("Encryption returned empty result.")
             except Exception as e:
-                return JsonResponse({"status": "error", "message": f"Encryption failed: {str(e)}"}, status=400)
+                logging.error(f"Encryption failed: {str(e)}")
+                return JsonResponse({"status": "error", "message": "Encryption failed."}, status=400)
 
             return JsonResponse({
                 "status": "success",
@@ -199,4 +202,5 @@ class EncryptView(View):
             }, status=200)
 
         except Exception as e:
-            return JsonResponse({"status": "error", "message": f"Unexpected error: {str(e)}"}, status=500)
+            logging.error(f"Unexpected error: {str(e)}")
+            return JsonResponse({"status": "error", "message": "Unexpected error occurred."}, status=500)
