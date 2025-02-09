@@ -6,9 +6,7 @@ from django.http import JsonResponse
 from django.views import View
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
-from django.utils import timezone
 import json
-from datetime import timedelta
 
 def get_secret_key():
     """Returns a predefined secret key."""
@@ -62,33 +60,30 @@ def decrypt_aes_js_style(encrypted_text_b64, key):
     except Exception:
         return None
 
-def encrypt_aes_js_style(plain_text, key):
-    """Encrypts a plain text using AES (CryptoJS compatible)."""
-    salt = hashlib.sha256().digest()[:8]  # Generate an 8-byte salt
-    derived_key, derived_iv = derive_key_and_iv(key, salt)
-    cipher = AES.new(derived_key, AES.MODE_CBC, derived_iv)
-    padded_text = pad(plain_text.encode('utf-8'), AES.block_size)
-    encrypted_bytes = cipher.encrypt(padded_text)
-    return base64.b64encode(b"Salted__" + salt + encrypted_bytes).decode('utf-8')
-
 def parse_decrypted_text(decrypted_text):
-    """Parses and updates the decrypted text."""
+    """Parses the decrypted text into structured data."""
     try:
         course_id, meet_id, date, start, end = decrypted_text.split(',')
-        now = timezone.now()
-        new_date = now.strftime("%Y-%m-%d")
-        new_start = now.strftime("%H:%M")
-        new_end = (now + timedelta(minutes=1)).strftime("%H:%M")
-        
         return {
-            "course_id": course_id,
-            "meet_id": meet_id,
-            "date": new_date,
-            "start": new_start,
-            "end": new_end
+            "status": "success",
+            "message": "Decryption successful.",
+            "data": {
+                "decrypted_text": decrypted_text,
+                "course_id": course_id,
+                "meet_id": meet_id,
+                "date": date,
+                "start": start,
+                "end": end
+            }
         }
     except ValueError:
-        return None
+        return {
+            "status": "error",
+            "message": "Invalid decrypted format.",
+            "data": {
+                "decrypted_text": decrypted_text
+            }
+        }
 
 @method_decorator(csrf_exempt, name='dispatch')
 class UpdateEncryptedView(View):
@@ -96,34 +91,14 @@ class UpdateEncryptedView(View):
         try:
             data = json.loads(request.body)
             encrypted_message = data.get("encrypted_message", "")
-            new_meet_id = data.get("new_meet_id", "")
-            
-            if not encrypted_message or not new_meet_id:
-                return JsonResponse({"status": "error", "message": "Missing required fields."}, status=400)
-            
             secret_key = get_secret_key()
             shift_value = 3
             decryption_key = caesar_decipher(secret_key, shift_value)
             decrypted_text = decrypt_aes_js_style(encrypted_message, decryption_key)
             
-            if not decrypted_text:
-                return JsonResponse({"status": "error", "message": "Decryption failed."}, status=400)
-            
-            parsed_data = parse_decrypted_text(decrypted_text)
-            if not parsed_data:
-                return JsonResponse({"status": "error", "message": "Invalid decrypted format."}, status=400)
-            
-            parsed_data["meet_id"] = new_meet_id  # Update meet_id
-            updated_text = f"{parsed_data['course_id']},{parsed_data['meet_id']},{parsed_data['date']},{parsed_data['start']},{parsed_data['end']}"
-            new_encrypted_message = encrypt_aes_js_style(updated_text, decryption_key)
-            
-            return JsonResponse({
-                "status": "success",
-                "message": "Encryption updated successfully.",
-                "data": {
-                    "updated_encrypted_message": new_encrypted_message,
-                    "updated_details": parsed_data
-                }
-            })
+            if decrypted_text:
+                return JsonResponse(parse_decrypted_text(decrypted_text), status=200)
+            else:
+                return JsonResponse({"status": "error", "message": "Decryption failed.", "data": None}, status=400)
         except json.JSONDecodeError:
-            return JsonResponse({"status": "error", "message": "Invalid JSON format."}, status=400)
+            return JsonResponse({"status": "error", "message": "Invalid JSON format.", "data": None}, status=400)
