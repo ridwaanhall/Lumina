@@ -8,10 +8,11 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 import json
 from datetime import datetime, timedelta
+from django.conf import settings
 
 def get_secret_key():
     """Returns a predefined secret key."""
-    return "xwbmrperu123"
+    return settings.KODE_AKSES
 
 def caesar_cipher(text, shift):
     """Encrypts text using a simple Caesar cipher."""
