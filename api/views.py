@@ -9,6 +9,8 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 from datetime import datetime, timedelta
 from django.conf import settings
+import logging
+logging.basicConfig(level=logging.ERROR)
 
 def get_secret_key():
     """Returns a predefined secret key."""
@@ -96,14 +98,16 @@ class DecryptView(View):
                 shift_value = 3
                 decryption_key = caesar_decipher(secret_key, shift_value)
             except Exception as e:
-                return JsonResponse({"status": "error", "message": f"Failed to retrieve decryption key: {str(e)}", "data": None}, status=500)
+                logging.error(f"Failed to retrieve decryption key: {str(e)}")
+                return JsonResponse({"status": "error", "message": "Failed to retrieve decryption key.", "data": None}, status=500)
 
             try:
                 decrypted_text = decrypt_aes_js_style(encrypted_message, decryption_key)
                 if not decrypted_text:
                     raise ValueError("Decryption returned empty result.")
             except Exception as e:
-                return JsonResponse({"status": "error", "message": f"Decryption failed: {str(e)}", "data": None}, status=400)
+                logging.error(f"Decryption failed: {str(e)}")
+                return JsonResponse({"status": "error", "message": "Decryption failed.", "data": None}, status=400)
 
             try:
                 course_id, meet_id, date, start, end = decrypted_text.split(',')
@@ -124,7 +128,8 @@ class DecryptView(View):
             }, status=200)
 
         except Exception as e:
-            return JsonResponse({"status": "error", "message": f"Unexpected error: {str(e)}", "data": None}, status=500)
+            logging.error(f"Unexpected error: {str(e)}")
+            return JsonResponse({"status": "error", "message": "An unexpected error has occurred.", "data": None}, status=500)
 
 @method_decorator(csrf_exempt, name='dispatch')
 class EncryptView(View):
