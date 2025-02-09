@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Lumina: Generator Kode Presensi Otomatis{% endblock %}
+
+{% block content %}
+
+<section class="section">
+    <div class="columns is-centered">
+        <div class="column is-6">
+            <h1 class="title has-text-centered">Enkripsi Kode Presensi</h1>
+            
+            <div class="box">
+                <label class="label">Masukkan Kode Terenkripsi Lama:</label>
+                <textarea id="encrypted_message" class="textarea" placeholder="Tempel kode di sini..."></textarea>
+
+                <label class="label mt-3">Masukkan Meet ID Baru:</label>
+                <input id="new_meet_id" class="input" type="text" placeholder="Contoh: 400">
+
+                <button id="encryptButton" class="button is-primary is-fullwidth mt-3">
+                    Enkripsi Kode Baru
+                </button>
+
+                <div id="encryptedResult" class="notification is-light mt-3" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block script %}
+<script>
+    document.getElementById("encryptButton").addEventListener("click", function() {
+        let encryptedMessage = document.getElementById("encrypted_message").value;
+        let newMeetId = document.getElementById("new_meet_id").value;
+
+        if (!encryptedMessage || !newMeetId) {
+            alert("Masukkan kode terenkripsi dan Meet ID baru terlebih dahulu!");
+            return;
+        }
+
+        fetch("{% url 'encrypt' %}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRFToken": getCookie("csrftoken")  // Ensure CSRF protection
+            },
+            body: JSON.stringify({ "encrypted_message": encryptedMessage, "new_meet_id": newMeetId })
+        })
+        .then(response => response.json())
+        .then(data => {
+            let resultDiv = document.getElementById("encryptedResult");
+            if (data.status === "success") {
+                resultDiv.classList.remove("is-danger");
+                resultDiv.classList.add("is-success");
+                resultDiv.innerHTML = `
+                    <strong>Berhasil Enkripsi!</strong><br>
+                    <b>Kode Terenkripsi Baru:</b> ${data.data.updated_encrypted_message} <br>
+                    <b>Course ID:</b> ${data.data.updated_details.course_id} <br>
+                    <b>Meet ID:</b> ${data.data.updated_details.meet_id} <br>
+                    <b>Tanggal:</b> ${data.data.updated_details.date} <br>
+                    <b>Mulai:</b> ${data.data.updated_details.start} <br>
+                    <b>Selesai:</b> ${data.data.updated_details.end}
+                `;
+            } else {
+                resultDiv.classList.remove("is-success");
+                resultDiv.classList.add("is-danger");
+                resultDiv.innerHTML = `<strong>Gagal Enkripsi:</strong> ${data.message}`;
+            }
+            resultDiv.style.display = "block";
+        })
+        .catch(error => console.error("Error:", error));
+    });
+
+    // Function to get CSRF token
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            let cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+</script>
+{% endblock %}
