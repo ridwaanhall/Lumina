@@ -33,16 +33,9 @@ def caesar_decipher(text, shift):
     """Decrypts text using a simple Caesar cipher."""
     return caesar_cipher(text, 26 - shift)
 
-def derive_key_and_iv(password, salt, key_length=32, iv_length=16):
-    """Derives a key and IV from the password and salt, replicating CryptoJS behavior."""
-    password_bytes = password.encode('utf-8')
-    key_iv = b""
-    digest = b""
-    
-    while len(key_iv) < key_length + iv_length:
-        digest = hashlib.md5(digest + password_bytes + salt).digest()
-        key_iv += digest
-    
+def derive_key_and_iv(password, salt, key_length=32, iv_length=16, iterations=100000):
+    """Derives a key and IV from the password and salt using PBKDF2."""
+    key_iv = hashlib.pbkdf2_hmac('sha256', password.encode('utf-8'), salt, iterations, dklen=key_length + iv_length)
     return key_iv[:key_length], key_iv[key_length:key_length + iv_length]
 
 def decrypt_aes_js_style(encrypted_text_b64, key):
