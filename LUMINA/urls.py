@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path('', include('absen.urls')),
     path('blog/', include('blog.urls')),
+    path('api/', include('api.urls')),
 
     path('@ridwaanhall', views.PortfolioWebsiteView.as_view(), name='ridwaanhall'),
     path('lanpage/', views.LandingPageView.as_view(), name='lanpage'),
