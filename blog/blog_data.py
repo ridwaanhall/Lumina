@@ -22,14 +22,14 @@ class BlogData:
                 </p>
                 
                 <p>
-                    Sebagai mahasiswa, kita semua pernah mengalami situasi <strong>lupa belum presensi</strong>. Kami menyadari bahwa <em>LUpa Min IziN Absen</em> adalah masalah umum yang bisa terjadi pada siapa saja, terutama di tengah kesibukan aktivitas perkuliahan.  Oleh karena itu, <strong>Lumina</strong> hadir sebagai pengingat bahwa ketidaksempurnaan manusia seperti <strong>lupa belum presensi</strong>, tidak boleh menjadi penghalang kesuksesan akademik Anda. <strong>Lumina</strong> hadir sebagai solusi atas kelupaan belum presensi.
+                    Sebagai mahasiswa, kita semua pernah mengalami situasi <strong>lupa belum presensi</strong>. Kami menyadari bahwa <em>LUpa MIn iziN Absen</em> adalah masalah umum yang bisa terjadi pada siapa saja, terutama di tengah kesibukan aktivitas perkuliahan.  Oleh karena itu, <strong>Lumina</strong> hadir sebagai pengingat bahwa ketidaksempurnaan manusia seperti <strong>lupa belum presensi</strong>, tidak boleh menjadi penghalang kesuksesan akademik Anda. <strong>Lumina</strong> hadir sebagai solusi atas kelupaan belum presensi.
                 </p>
 
                 <h4>Lumina: Generator Kode Presensi Otomatis untuk Mengatasi Lupa Belum Presensi</h4>
                 <p>
                     Fitur utama <strong>Lumina</strong> adalah <strong>generator kode presensi otomatis!</strong> Tidak perlu lagi khawatir jika <strong>lupa belum presensi</strong>. Caranya sangat mudah: cukup <em>copy-paste</em> kode presensi lama yang terenkripsi ke kolom yang tersedia, lalu
                     masukkan nomor pertemuan. Klik tombol "Buat Presensi Baru" dan <strong>Lumina</strong> akan langsung memproses kode tersebut. Dalam sekejap, kamu akan mendapatkan kode presensi baru yang terenkripsi dan siap digunakan!
-                    <strong>Sangat simpel, bukan?</strong> Ini adalah cara cerdas untuk mengatasi masalah <em>LUpa Min IziN Absen</em>, terutama saat kamu <em>lupa belum presensi</em>.
+                    <strong>Sangat simpel, bukan?</strong> Ini adalah cara cerdas untuk mengatasi masalah <em>LUpa MIn iziN Absen</em>, terutama saat kamu <em>lupa belum presensi</em>.
                 </p>
 
                 <h4>Desain Antarmuka Pengguna yang Intuitif, Memudahkan Saat Lupa Belum Presensi</h4>
@@ -51,7 +51,7 @@ class BlogData:
                 </p>
 
                 <h4>Lumina: Sahabat Presensimu, Penyelamat Saat Lupa Belum Presensi</h4>
-                <p>Dengan <strong>Lumina</strong>, kami berharap masalah <strong>lupa belum presensi</strong> dapat teratasi dengan lebih mudah. <em>Ingat, <strong>Lumina</strong> hadir untuk membantu Anda mengatasi <strong>LUpa Min IziN Absen</strong>, terutama ketika kamu <strong>lupa belum presensi</strong>.</em> Selamat menggunakan dan semoga sukses dalam studi kamu! Kami hadir sebagai solusi cerdas saat Anda menghadapi masalah <strong>lupa belum presensi</strong>.</p>
+                <p>Dengan <strong>Lumina</strong>, kami berharap masalah <strong>lupa belum presensi</strong> dapat teratasi dengan lebih mudah. <em>Ingat, <strong>Lumina</strong> hadir untuk membantu Anda mengatasi <strong>LUpa MIn iziN Absen</strong>, terutama ketika kamu <strong>lupa belum presensi</strong>.</em> Selamat menggunakan dan semoga sukses dalam studi kamu! Kami hadir sebagai solusi cerdas saat Anda menghadapi masalah <strong>lupa belum presensi</strong>.</p>
             """
         },
         {

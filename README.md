@@ -6,7 +6,7 @@
 
 ## 🤔 Mengapa Lumina Hadir?
 
-Sebagai mahasiswa, kita semua pernah mengalami situasi **lupa belum presensi**. Kami menyadari bahwa **LUpa Min IziN Absen** adalah masalah umum yang bisa terjadi pada siapa saja, terutama di tengah kesibukan aktivitas perkuliahan. Oleh karena itu, Lumina hadir sebagai pengingat bahwa **ketidaksempurnaan manusia seperti lupa belum presensi, tidak boleh menjadi penghalang kesuksesan akademik Anda.** Lumina hadir sebagai solusi atas kelupaan belum presensi.
+Sebagai mahasiswa, kita semua pernah mengalami situasi **lupa belum presensi**. Kami menyadari bahwa **LUpa MIn iziN Absen** adalah masalah umum yang bisa terjadi pada siapa saja, terutama di tengah kesibukan aktivitas perkuliahan. Oleh karena itu, Lumina hadir sebagai pengingat bahwa **ketidaksempurnaan manusia seperti lupa belum presensi, tidak boleh menjadi penghalang kesuksesan akademik Anda.** Lumina hadir sebagai solusi atas kelupaan belum presensi.
 
 **Penting untuk diingat:** Lumina diperuntukkan bagi mahasiswa yang *benar-benar lupa* melakukan presensi. **Lumina tidak ditujukan untuk memfasilitasi tindakan bolos atau penyalahgunaan lainnya.** Kami percaya pada integritas akademik dan penggunaan Lumina secara bertanggung jawab.
 
@@ -18,7 +18,7 @@ Sebagai mahasiswa, kita semua pernah mengalami situasi **lupa belum presensi**. 
 2. **Masukkan Nomor Pertemuan:** Isi nomor pertemuan yang sesuai.
 3. **Buat Presensi Baru:** Klik tombol "Buat Presensi Baru".
 
-Dalam sekejap, kamu akan mendapatkan kode presensi baru yang terenkripsi dan siap digunakan! Sangat simpel, bukan? Ini adalah cara cerdas untuk mengatasi masalah **LUpa Min IziN Absen**, terutama saat kamu lupa belum presensi.
+Dalam sekejap, kamu akan mendapatkan kode presensi baru yang terenkripsi dan siap digunakan! Sangat simpel, bukan? Ini adalah cara cerdas untuk mengatasi masalah **LUpa MIn iziN Absen**, terutama saat kamu lupa belum presensi.
 
 ## 💫 Desain Intuitif, Mudah Digunakan Saat Panik
 
