@@ -7,6 +7,7 @@ from django.views import View
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 import json
+from datetime import datetime, timedelta
 
 def get_secret_key():
     """Returns a predefined secret key."""
@@ -60,33 +61,24 @@ def decrypt_aes_js_style(encrypted_text_b64, key):
     except Exception:
         return None
 
-def parse_decrypted_text(decrypted_text):
-    """Parses the decrypted text into structured data."""
+def encrypt_aes_js_style(plaintext, key):
+    """Encrypts text using AES encryption (Base64 encoded)."""
     try:
-        course_id, meet_id, date, start, end = decrypted_text.split(',')
-        return {
-            "status": "success",
-            "message": "Decryption successful.",
-            "data": {
-                "decrypted_text": decrypted_text,
-                "course_id": course_id,
-                "meet_id": meet_id,
-                "date": date,
-                "start": start,
-                "end": end
-            }
-        }
-    except ValueError:
-        return {
-            "status": "error",
-            "message": "Invalid decrypted format.",
-            "data": {
-                "decrypted_text": decrypted_text
-            }
-        }
+        salt = hashlib.sha256().digest()[:8]
+        derived_key, derived_iv = derive_key_and_iv(key, salt)
+        
+        cipher = AES.new(derived_key, AES.MODE_CBC, derived_iv)
+        padded_plaintext = pad(plaintext.encode('utf-8'), AES.block_size)
+        encrypted_bytes = cipher.encrypt(padded_plaintext)
+        
+        return base64.b64encode(b"Salted__" + salt + encrypted_bytes).decode('utf-8')
+    
+    except Exception:
+        return None
 
 @method_decorator(csrf_exempt, name='dispatch')
 class DecryptView(View):
+    """Handles decryption of an encrypted attendance code."""
     def post(self, request):
         try:
             data = json.loads(request.body)
@@ -97,8 +89,70 @@ class DecryptView(View):
             decrypted_text = decrypt_aes_js_style(encrypted_message, decryption_key)
             
             if decrypted_text:
-                return JsonResponse(parse_decrypted_text(decrypted_text), status=200)
+                course_id, meet_id, date, start, end = decrypted_text.split(',')
+                return JsonResponse({
+                    "status": "success",
+                    "message": "Decryption successful.",
+                    "data": {
+                        "decrypted_text": decrypted_text,
+                        "course_id": course_id,
+                        "meet_id": meet_id,
+                        "date": date,
+                        "start": start,
+                        "end": end
+                    }
+                }, status=200)
             else:
                 return JsonResponse({"status": "error", "message": "Decryption failed.", "data": None}, status=400)
         except json.JSONDecodeError:
             return JsonResponse({"status": "error", "message": "Invalid JSON format.", "data": None}, status=400)
+
+@method_decorator(csrf_exempt, name='dispatch')
+class EncryptView(View):
+    """Handles encryption of a new attendance code."""
+    def post(self, request):
+        try:
+            data = json.loads(request.body)
+            encrypted_message = data.get("encrypted_message", "")
+            new_meet_id = data.get("new_meet_id", "")
+
+            if not encrypted_message or not new_meet_id:
+                return JsonResponse({"status": "error", "message": "Missing required fields."}, status=400)
+
+            secret_key = get_secret_key()
+            shift_value = 3
+            decryption_key = caesar_decipher(secret_key, shift_value)
+            decrypted_text = decrypt_aes_js_style(encrypted_message, decryption_key)
+
+            if not decrypted_text:
+                return JsonResponse({"status": "error", "message": "Decryption failed."}, status=400)
+
+            course_id, _, _, _, _ = decrypted_text.split(',')
+            now = datetime.now()
+            new_date = now.strftime("%Y-%m-%d")
+            new_start = now.strftime("%H:%M")
+            new_end = (now + timedelta(minutes=1)).strftime("%H:%M")
+
+            updated_text = f"{course_id},{new_meet_id},{new_date},{new_start},{new_end}"
+            new_encrypted_message = encrypt_aes_js_style(updated_text, decryption_key)
+
+            if not new_encrypted_message:
+                return JsonResponse({"status": "error", "message": "Encryption failed."}, status=400)
+
+            return JsonResponse({
+                "status": "success",
+                "message": "Encryption updated successfully.",
+                "data": {
+                    "updated_encrypted_message": new_encrypted_message,
+                    "updated_details": {
+                        "course_id": course_id,
+                        "meet_id": new_meet_id,
+                        "date": new_date,
+                        "start": new_start,
+                        "end": new_end
+                    }
+                }
+            }, status=200)
+
+        except json.JSONDecodeError:
+            return JsonResponse({"status": "error", "message": "Invalid JSON format."}, status=400)
