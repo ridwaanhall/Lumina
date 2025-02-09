@@ -86,7 +86,7 @@ def parse_decrypted_text(decrypted_text):
         }
 
 @method_decorator(csrf_exempt, name='dispatch')
-class UpdateEncryptedView(View):
+class DecryptView(View):
     def post(self, request):
         try:
             data = json.loads(request.body)
