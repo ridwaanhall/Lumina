@@ -3,7 +3,7 @@ from django.views import View
 
 from . import about_data
 
-class LuminaAppView(View):
+class LuminaSecAppView(View):
     def get(self, request):
         try:
             return render(request, 'absen/absen.html')
@@ -20,7 +20,7 @@ class LuminaAppView(View):
             }
             return render(request, 'error.html', context, status=500)
         
-class LuminaSecAppView(View):
+class LuminaAppView(View):
     def get(self, request):
         try:
             return render(request, 'absen/absen_sec.html')
