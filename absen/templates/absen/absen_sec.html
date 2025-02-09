@@ -9,12 +9,83 @@
 <section class="section">
     <div class="columns is-centered">
         <div class="column is-6">
-            
+            <div class="box">
+                <h1 class="title has-text-centered">Update Encrypted Code</h1>
+
+                <form id="updateForm">
+                    <div class="field">
+                        <label class="label">Encrypted Code</label>
+                        <div class="control">
+                            <input type="text" id="encrypted_message" class="input" placeholder="Enter encrypted message" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">New Meet ID</label>
+                        <div class="control">
+                            <input type="number" id="new_meet_id" class="input" placeholder="Enter new meet ID" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <button type="submit" class="button is-primary is-fullwidth">Update</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="responseMessage" class="notification is-hidden"></div>
+            </div>
         </div>
     </div>
 </section>
+
 {% endblock %}
 
 {% block script %}
-
+<script>
+    document.getElementById("updateForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+    
+        let encryptedMessage = document.getElementById("encrypted_message").value;
+        let newMeetId = document.getElementById("new_meet_id").value;
+        let responseDiv = document.getElementById("responseMessage");
+    
+        fetch("{% url 'decrypt-update' %}", { // Replace with your Django URL name
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRFToken": "{{ csrf_token }}"  // Ensure CSRF token is included
+            },
+            body: JSON.stringify({
+                encrypted_message: encryptedMessage,
+                new_meet_id: newMeetId
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === "success") {
+                let details = data.data.updated_details;
+                responseDiv.className = "notification is-success";
+                responseDiv.innerHTML = `<strong>Success!</strong> Encrypted message updated.<br>
+                    <strong>New Encrypted Message:</strong> ${data.data.updated_encrypted_message}<br>
+                    <strong>Course ID:</strong> ${details.course_id}<br>
+                    <strong>Meet ID:</strong> ${details.meet_id}<br>
+                    <strong>Date:</strong> ${details.date}<br>
+                    <strong>Start:</strong> ${details.start}<br>
+                    <strong>End:</strong> ${details.end}`;
+            } else {
+                responseDiv.className = "notification is-danger";
+                responseDiv.innerHTML = `<strong>Error:</strong> ${data.message}`;
+            }
+            responseDiv.classList.remove("is-hidden");
+        })
+        .catch(error => {
+            responseDiv.className = "notification is-danger";
+            responseDiv.innerHTML = "<strong>Error:</strong> Unable to update. Please try again.";
+            responseDiv.classList.remove("is-hidden");
+        });
+    });
+    
+</script>
 {% endblock %}
