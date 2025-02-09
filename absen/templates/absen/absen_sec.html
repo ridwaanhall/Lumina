@@ -9,7 +9,105 @@
 <section class="section">
     <div class="columns is-centered">
         <div class="column is-6">
-            
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                    <li class="is-active">
+                        <a href="{% url 'lumina-app' %}" aria-current="page">Lumina</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <div class="has-text-centered">
+                            Error? Gak ngerti cara makenya? <em>cusss</em> ke <a href="{% url 'blog' %}" class="has-text-link"> Lumina Blog</a> aja ya!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="content">
+                        <p class="is-size-5">Kode Presensi Lama</p>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="password" id="inputcodeabsen" placeholder="Tempel kode presensi kamu di sini ya!" />
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="number" id="inputpertemuan" placeholder="Pertemuan Keberapa, nih?" />
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-arrow-up-9-1"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="termsCheckbox" />
+                                    Aku udah baca <a href="{% url 'terms' %}" target="_blank">Ketentuan Lumina</a>, dan <em>yes</em>! Aku setuju!
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field is-grouped is-grouped-right">
+                            <div class="control">
+                                <button class="button is-link is-outlined" onclick="showDecrypted();" disabled id="submitButton">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-gears"></i>
+                                    </span>
+                                    <span>Bikin Presensi Baru</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="secondCard" style="display: none;">
+                <article class="message card is-small is-danger mb-2">
+                    <div class="message-body">
+                        <div class="has-text-centered">
+                            <span class="icon is-small">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                            <span id="description_valid">
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <div class="card mt-2">
+                    <div class="card-content">
+                        <div class="content">
+                            <p class="is-size-5"><em>Nih</em>, Kode Presensi & QR Code Baru Kamu!</p>
+                            <div class="field">
+                                <p class="control has-icons-left">
+                                    <input class="input" type="text" id="kode_baru_enc" placeholder="Presensi Barunya Udah Nongol Di Sini, ya!" />
+                                    <span class="icon is-small is-left">
+                                        <i class="fa-regular fa-comment-dots"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="field is-grouped is-grouped-right">
+                                <button id="copyButton" class="button is-link is-outlined">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-copy"></i>
+                                    </span>
+                                    <span>Salin</span>
+                                </button>
+                                <a id="generateQRButton" class="button">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-qrcode"></i>
+                                    </span>
+                                    <span>QR Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
