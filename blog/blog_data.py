@@ -159,6 +159,9 @@ class BlogData:
                             <div class="notification is-info">
                                 <p><strong>Penting!</strong> Pastikan kode presensi lamamu valid agar generator bekerja dengan baik.</p>
                             </div>
+                            <div class="notification is-success">
+                                <p>Contoh: U2FsdGVkX1/qR8erE3Evzjv2Daox6sP8E0kqpVTyIG2xZNiQWruAUNY9NkXuMtqngk4eP5Qcu/YM5trQQGL49w==</p>
+                            </div>
                         </div>
                     </div>
 
