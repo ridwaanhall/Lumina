@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import DecryptView, EncryptView
+from . import views
 
 urlpatterns = [
-    path('decrypt/', DecryptView.as_view(), name='decrypt'),
-    path('encrypt/', EncryptView.as_view(), name='encrypt'),
+    path('decrypt/', views.DecryptView.as_view(), name='decrypt'),
+    path('encrypt/', views.EncryptView.as_view(), name='encrypt'),
 ]
