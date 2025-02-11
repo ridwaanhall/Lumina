@@ -87,11 +87,19 @@ class DecryptView(View):
             try:
                 data = json.loads(request.body)
             except json.JSONDecodeError:
-                return JsonResponse({"status": "error", "message": "Invalid JSON format.", "data": None}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Invalid JSON format.",
+                    "data": None
+                }, status=400)
 
             encrypted_message = data.get("encrypted_message", "").strip()
             if not encrypted_message:
-                return JsonResponse({"status": "error", "message": "Missing 'encrypted_message' field.", "data": None}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Missing 'encrypted_message' field.",
+                    "data": None
+                }, status=400)
 
             try:
                 secret_key = get_secret_key()
@@ -99,7 +107,11 @@ class DecryptView(View):
                 decryption_key = caesar_decipher(secret_key, shift_value)
             except Exception as e:
                 logging.error(f"Failed to retrieve decryption key: {str(e)}")
-                return JsonResponse({"status": "error", "message": "Failed to retrieve decryption key.", "data": None}, status=500)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Failed to retrieve decryption key.",
+                    "data": None
+                }, status=500)
 
             try:
                 decrypted_text = decrypt_aes_js_style(encrypted_message, decryption_key)
@@ -107,12 +119,20 @@ class DecryptView(View):
                     raise ValueError("Decryption returned empty result.")
             except Exception as e:
                 logging.error(f"Decryption failed: {str(e)}")
-                return JsonResponse({"status": "error", "message": "Decryption failed.", "data": None}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Decryption failed.",
+                    "data": None
+                }, status=400)
 
             try:
                 course_id, meet_id, date, start, end = decrypted_text.split(',')
             except ValueError:
-                return JsonResponse({"status": "error", "message": "Invalid decrypted message format.", "data": None}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Invalid decrypted message format.",
+                    "data": None
+                }, status=400)
 
             return JsonResponse({
                 "status": "success",
@@ -129,7 +149,10 @@ class DecryptView(View):
 
         except Exception as e:
             logging.error(f"Unexpected error: {str(e)}")
-            return JsonResponse({"status": "error", "message": "An unexpected error has occurred.", "data": None}, status=500)
+            return JsonResponse({"status":
+                "error", "message": "An unexpected error has occurred.",
+                "data": None
+            }, status=500)
 
 @method_decorator(csrf_exempt, name='dispatch')
 class EncryptView(View):
@@ -140,15 +163,24 @@ class EncryptView(View):
             try:
                 data = json.loads(request.body)
             except json.JSONDecodeError:
-                return JsonResponse({"status": "error", "message": "Invalid JSON format."}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Invalid JSON format."
+                }, status=400)
 
             encrypted_message = data.get("encrypted_message", "").strip()
             new_meet_id = data.get("new_meet_id", "").strip()
 
             if not encrypted_message:
-                return JsonResponse({"status": "error", "message": "Missing 'encrypted_message' field."}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Missing 'encrypted_message' field."
+                }, status=400)
             if not new_meet_id:
-                return JsonResponse({"status": "error", "message": "Missing 'new_meet_id' field."}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Missing 'new_meet_id' field."
+                }, status=400)
 
             try:
                 secret_key = get_secret_key()
@@ -156,7 +188,10 @@ class EncryptView(View):
                 decryption_key = caesar_decipher(secret_key, shift_value)
             except Exception as e:
                 logging.error(f"Failed to retrieve decryption key: {str(e)}")
-                return JsonResponse({"status": "error", "message": "Failed to retrieve decryption key."}, status=500)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Failed to retrieve decryption key."
+                }, status=500)
 
             try:
                 decrypted_text = decrypt_aes_js_style(encrypted_message, decryption_key)
@@ -164,12 +199,18 @@ class EncryptView(View):
                     raise ValueError("Decryption returned empty result.")
             except Exception as e:
                 logging.error(f"Decryption failed: {str(e)}")
-                return JsonResponse({"status": "error", "message": "Decryption failed."}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Decryption failed."
+                }, status=400)
 
             try:
                 course_id, _, _, _, _ = decrypted_text.split(',')
             except ValueError:
-                return JsonResponse({"status": "error", "message": "Invalid decrypted message format."}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Invalid decrypted message format."
+                }, status=400)
 
             now = datetime.now()
             new_date = now.strftime("%Y-%m-%d")
@@ -184,7 +225,10 @@ class EncryptView(View):
                     raise ValueError("Encryption returned empty result.")
             except Exception as e:
                 logging.error(f"Encryption failed: {str(e)}")
-                return JsonResponse({"status": "error", "message": "Encryption failed."}, status=400)
+                return JsonResponse({
+                    "status": "error",
+                    "message": "Encryption failed."
+                }, status=400)
 
             return JsonResponse({
                 "status": "success",
@@ -203,4 +247,7 @@ class EncryptView(View):
 
         except Exception as e:
             logging.error(f"Unexpected error: {str(e)}")
-            return JsonResponse({"status": "error", "message": "Unexpected error occurred."}, status=500)
+            return JsonResponse({
+                "status": "error",
+                "message": "Unexpected error occurred."
+            }, status=500)
