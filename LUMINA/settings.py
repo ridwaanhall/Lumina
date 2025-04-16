@@ -11,7 +11,8 @@ DEBUG = config('DEV', default=False, cast=bool)
 if not DEBUG:
     ALLOWED_HOSTS = [
         '.vercel.app',
-        '.ridwaanhall.me'
+        '.ridwaanhall.me',
+        '.ridwaanhall.com',
     ]
 else:
     ALLOWED_HOSTS = []
