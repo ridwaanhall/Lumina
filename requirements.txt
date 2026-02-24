@@ -1,4 +1,4 @@
-﻿asgiref==3.8.1
+asgiref==3.8.1
 certifi==2025.1.31
 charset-normalizer==3.4.1
 Django==5.2.11
@@ -6,10 +6,10 @@ django-livereload-server==0.5.1
 idna==3.10
 pycryptodome==3.21.0
 python-decouple==3.8
-requests==2.32.3
-sqlparse==0.5.3
-tornado==6.4.2
+requests==2.32.4
+sqlparse==0.5.4
+tornado==6.5
 tzdata==2025.1
-urllib3==2.3.0
+urllib3==2.6.3
 whitenoise==6.8.2
 
