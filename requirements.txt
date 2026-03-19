@@ -1,7 +1,7 @@
 asgiref==3.8.1
 certifi==2025.1.31
 charset-normalizer==3.4.1
-Django==5.2.11
+Django==5.2.12
 django-livereload-server==0.5.1
 idna==3.10
 pycryptodome==3.21.0

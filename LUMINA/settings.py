@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 KODE_AKSES = config('KODE_AKSES')
 
-DEBUG = config('DEV', default=False, cast=bool)
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 if not DEBUG:
     ALLOWED_HOSTS = [
