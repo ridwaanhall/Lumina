@@ -10,6 +10,6 @@ requests==2.33.0
 sqlparse==0.5.4
 tornado==6.5.5
 tzdata==2025.1
-urllib3==2.6.3
+urllib3==2.7.0
 whitenoise==6.8.2
 
