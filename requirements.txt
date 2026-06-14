@@ -3,5 +3,5 @@ django-livereload-server==0.5.1
 pycryptodome==3.21.0
 python-decouple==3.8
 requests==2.33.0
-tornado==6.5.5
+tornado==6.5.6
 whitenoise==6.8.2
