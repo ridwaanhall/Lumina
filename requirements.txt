@@ -1,4 +1,4 @@
-Django==6.0.5
+Django==6.0.6
 django-livereload-server==0.5.1
 pycryptodome==3.21.0
 python-decouple==3.8
